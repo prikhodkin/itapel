@@ -1,0 +1,150 @@
+.promo {
+  .tns-controls {
+    display: none;
+  }
+
+  .tns-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 9px;
+      margin: 0 5px;
+      padding: 0;
+      background-color: #c4c4c4;
+      border: none;
+      border-radius: 50%;
+      transition: all 0.3s;
+      appearance: none;
+
+      &.tns-nav-active {
+        background-color: #2d2d2d;
+      }
+    }
+  }
+}
+
+.promo__list {
+  @include list-reset;
+  margin-bottom: 19px;
+}
+
+.promo__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__inner {
+  display: block;
+  min-height: 458px;
+  padding: 100px 20px;
+}
+
+.promo__header {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.promo__desc {
+  max-width: 164px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  .promo__header {
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .promo__inner {
+    padding-top: 190px;
+  }
+
+  .promo__desc {
+    max-width: unset;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .promo {
+    @include page-wrapper;
+    position: relative;
+
+    .tns-outer {
+      position: relative;
+    }
+
+    .tns-nav {
+      button {
+        width: 11px;
+        height: 11px;
+        margin: 0 6.5px;
+      }
+    }
+
+    .tns-controls {
+      position: absolute;
+      top: 50%;
+      left: 22px;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      width: calc(100% - 44px);
+      transform: translateY(calc(-50% - 30px));
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        font-size: 0;
+        background-color: #ffffff;
+        background-image: url("../../img/slider-arrow.png");
+        background-repeat: no-repeat;
+        background-position: top 10px left 11px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s;
+        appearance: none;
+
+        &:hover {
+          background-color: #ffcc00;
+        }
+
+
+        &:first-child {
+          background-position: top 11px left 11px;
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+
+  .promo__inner {
+    min-height: 458px;
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+
+  .promo__list {
+    margin-bottom: 40px;
+  }
+}
