@@ -1,3 +1,11 @@
 @font-face {
   @include includeFont(200, $first-font, "Montserrat-Thin");
 }
+
+@font-face {
+  @include includeFont(400, $first-font, "Montserrat-Regular");
+}
+
+@font-face {
+  @include includeFont(500, $first-font, "Montserrat-Medium");
+}

@@ -1,0 +1,45 @@
+.add-fav {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  appearance: none;
+
+  &:hover {
+    animation: pulse 1s ease-in-out infinite;
+  }
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 22px;
+    transition: all 0.3s;
+    fill: transparent;
+    stroke: #000000;
+    stroke-opacity: 1;
+    stroke-width: 2px;
+  }
+
+  &--active {
+    svg {
+      fill: #000000;
+    }
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

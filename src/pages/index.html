@@ -2,28 +2,57 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Gulp v4.1</title>
+  <title>Главная -  Itapel</title>
   @@include('../blocks/favicon/favicon.html')
-  <script src="js/vendor.js"></script>
+  <script src="js/vendor.js" defer></script>
   <script src="js/general.js" defer></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="tabs" data-tabs>
-    <ul class="tabs__list">
-      <li class="tabs__item tabs__item--active" data-tab="1">Tab # 1</li>
-      <li class="tabs__item"  data-tab="2">Tab # 2</li>
-      <li class="tabs__item" data-tab="3">Tab # 3</li>
-    </ul>
-    <div class="tabs__content tabs__content--active" data-content="1">
-      <p>Lorem ipsum.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="tabs__content" data-content="2">
-      <p>Lorem ipsum. Lorem ipsum dolor.</p>
-      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor.</p>
-    </div>
-    <div class="tabs__content" data-content="3">3</div>
-  </div>
+  <h1 class="title">Заголовок</h1>
+  <input type="text" class="input" placeholder="Инпут">
+  <button class="button">Кнопка</button>
+<div class="text-block">
+  <h1>h1</h1>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa fugiat impedit maxime sunt temporibus ut. Architecto magni omnis unde.</p>
+  <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ab aliquid amet id ipsam labore minima molestias similique vero voluptatibus.</b>
+  <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, provident!</strong>
+  <label class="radio">
+    <input type="radio" name="name" class="radio__input">
+    <span class="radio__circle"></span>
+    <span class="radio__text">Текст</span>
+  </label>
+  <label class="radio">
+    <input type="radio" name="name" class="radio__input">
+    <span class="radio__circle"></span>
+    <span class="radio__text">Текст</span>
+  </label>
+  <label class="radio">
+    <input type="checkbox" name="ff" class="radio__input">
+    <span class="radio__circle"></span>
+    <span class="radio__text">Текст</span>
+  </label>
+  <label class="radio">
+    <input type="checkbox" name="ff" class="radio__input">
+    <span class="radio__circle"></span>
+    <span class="radio__text">Текст</span>
+  </label>
+
+  <a href="#" class="add-fav" data-turbolinks="false">
+    <svg width="24" height="22">
+      <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+    </svg>
+  </a>
+  <a href="#" class="add-fav" data-turbolinks="false">
+    <svg width="24" height="22">
+      <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+    </svg>
+  </a>
+</div>
 </body>
 </html>
