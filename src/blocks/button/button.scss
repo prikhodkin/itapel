@@ -8,7 +8,7 @@
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  background-color: #2d2d2d;
+  background-color: $main;
   border: none;
   border-radius: 58px;
   box-shadow: none;
@@ -21,12 +21,12 @@
   }
 
   &:hover {
-    color: #2d2d2d;
+    color: $main;
     background-color: #ffcc00;
   }
 
   &:focus {
-    color: #2d2d2d;
+    color: $main;
     background-color: #ffcc00;
   }
 }
