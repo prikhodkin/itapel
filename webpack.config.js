@@ -1,8 +1,12 @@
 const path = require("path");
+require("babel-polyfill");
 
 module.exports = {
+  externals: {
+    paths: path
+  },
   entry: {
-    main: "./src/js/general.js",
+    main: "./src/js/general.js"
   },
   mode: "development",
 
@@ -41,6 +45,12 @@ module.exports = {
                 "@babel/plugin-proposal-decorators",
                 {
                   "legacy": true
+                }
+              ],
+              [
+                "@babel/plugin-transform-runtime",
+                {
+                  "regenerator": true
                 }
               ],
               "@babel/plugin-proposal-class-properties"

@@ -1,9 +1,11 @@
 import Turbolinks from "turbolinks";
-import Tabs from "%modules%/tabs/tabs"
-import {$, $$, listen} from "./util";
+import {listen} from "./util";
 import promoSlider from "%modules%/promo/promo";
 import addFavorite from "%modules%/add-fav/add-fav";
+import openDropdown from "%modules%/dropdown/dropdown";
+
 
 Turbolinks.start();
 promoSlider();
-addFavorite();
+listen(`click`, `.add-fav`, addFavorite)
+listen(`click`, `[data-dropdown]`, openDropdown);
