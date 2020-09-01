@@ -1,0 +1,148 @@
+.footer {
+  padding: 40px 20px 20px;
+  color: #ffffff;
+  background-color: $main;
+}
+
+.footer__col {
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+.footer__menu {
+  width: 36.5%;
+}
+
+.footer__item {
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+}
+
+.footer__phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__text {
+  margin-bottom: 27px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__contacts {
+  width: 130px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+
+.footer__copyright {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.footer__email {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (min-width: 768px) {
+  .footer__list {
+    &.hidden {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .footer__col {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    .dropdown__target {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .footer__menu {
+    display: flex;
+    width: unset;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    @include page-wrapper;
+    padding-top: 74px;
+    padding-bottom: 44px;
+  }
+
+  .footer__col {
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
+  }
+
+  .footer__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #ffcc00;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer__contacts {
+    display: flex;
+    width: unset;
+  }
+
+  .footer__social {
+    margin-right: 90px;
+  }
+
+  .footer__email {
+    display: none;
+  }
+
+  .footer__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer__phone {
+    transition: all 0.3s;
+
+    &:hover {
+      color: #ffcc00;
+    }
+  }
+
+  .footer__inner {
+    margin-bottom: 104px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

@@ -8,4 +8,8 @@ import openDropdown from "%modules%/dropdown/dropdown";
 Turbolinks.start();
 promoSlider();
 listen(`click`, `.add-fav`, addFavorite)
-listen(`click`, `[data-dropdown]`, openDropdown);
+
+
+if(window.matchMedia("(max-width: 767px)").matches) {
+  listen(`click`, `[data-dropdown]`, openDropdown);
+}
