@@ -11,3 +11,15 @@
 .page__footer {
   margin-top: auto;
 }
+
+.page__text-block {
+  padding: 30px 20px 50px 20px;
+}
+
+@media (min-width: 1280px) {
+  .page__text-block {
+    @include page-wrapper;
+    padding-top: 45px;
+    padding-bottom: 92px;
+  }
+}
