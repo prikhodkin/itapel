@@ -1,0 +1,136 @@
+.sales {
+  padding: 30px 0;
+}
+
+.sales__list {
+  @include list-reset;
+  display: flex;
+  overflow-x: auto;
+}
+
+
+.sales__item {
+  width: 280px;
+  min-width: 280px;
+  margin-right: 20px;
+
+  &:last-child {
+    padding-right: 20px;
+  }
+
+  &:nth-child(2) {
+    .sales__bg {
+      background-image: url("../../img/sales__img-2.jpg");
+    }
+  }
+
+  &:first-child {
+    margin-left: 20px;
+  }
+}
+
+.sales__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding-bottom: 20px;
+}
+
+.sales__header {
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.sales__desc {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.sales__content {
+  position: relative;
+  z-index: 10;
+  margin-top: auto;
+}
+
+.sales__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/sales__img-1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .sales__list {
+    overflow-x: unset;
+  }
+
+  .sales__item {
+    width: calc(50% - 10px);
+    margin-right: 0;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  .sales__inner {
+    height: 475px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sales {
+    @include page-wrapper;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+
+  .sales__inner {
+    padding-bottom: 45px;
+    overflow: hidden;
+    background-size: cover;
+    transition: all 0.3s;
+
+    &:hover {
+      .sales__bg {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .sales__header {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .sales__desc {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .sales__item {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
