@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Личные данные</title>
+    @@include('../blocks/favicon/favicon.html')
+    <script src="js/vendor.js" defer></script>
+    <script src="js/general.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="page">
+    @@include('../blocks/header/header.html')
+    <main class="page__main">
+      <a href="" class="basket__back-link">Назад к покупкам</a>
+      <h1 class="basket__title">Личный профиль</h1>
+      @@include('../blocks/user-profile/user-profile.html')
+
+      <section class="personal">
+        <div class="personal__top">
+          <div class="personal__data">
+            <h3 class="personal__title">Ваши данные</h3>
+            <div>
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Фамилия">
+              <input type="tel" placeholder="Контактный телефон">
+              <input type="email" placeholder="Электронная почта">
+            </div>
+            <p>Пол:</p>
+            <div>
+              <label>
+                <input type="radio" name="gender" value="Мужской" checked>
+                <p>Мужской</p>
+              </label>
+              <label>
+                <input type="radio" name="gender" value="Женский">
+                <p>Женский</p>
+              </label>
+            </div>
+          </div>
+          <div class="personal__right-column">
+            <div class="personal__addresses">
+              <h3 class="personal__title">Адреса доставки</h3>
+              <a href="" class="button">Добавить адрес</a>
+            </div>
+            <div class="personal__requisites">
+              <h3 class="personal__title">Реквизиты компании</h3>
+              <a href="" class="button">Добавить реквизиты</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="personal__title">СКАЧАЙТЕ ОПТОВЫЙ КАТАЛОГ НАШИХ ТОВАРОВ</h3>
+          <a href="" class="button">Скачать</a>
+        </div>
+      </section>
+
+    </main>
+    @@include('../blocks/footer/footer.html')
+  </body>
+</html>

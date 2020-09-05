@@ -1,0 +1,43 @@
+.user {
+  order: 4;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.user__list {
+  width: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.user__link {
+  span {
+    display: none;
+  }
+
+  &--fav {
+    svg {
+      display: block;
+      fill: transparent;
+      stroke: #000000;
+      stroke-opacity: 1;
+      stroke-width: 1px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .user__link {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .user__list {
+    width: 125px;
+  }
+}

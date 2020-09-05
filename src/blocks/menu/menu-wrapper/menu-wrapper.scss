@@ -1,0 +1,34 @@
+.navigation__gender {
+  color: #A2A2A2;
+  label{
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + span {
+    font-weight: 500;
+    color: black;
+  }
+}
+
+.navigation__payment {
+  margin-top: 40px;
+  display: block;
+}
+
+@media (min-width: 1280px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navigation__payment {
+    margin: 0;
+  }
+}
