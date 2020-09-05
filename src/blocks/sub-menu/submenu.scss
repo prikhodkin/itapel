@@ -2,7 +2,7 @@
   display: none;
 }
 
-.submenu__inner-list{
+.submenu__inner-list {
   li {
     padding: 5px 0;
   }
@@ -10,19 +10,19 @@
 
 .submenu__column {
   position: relative;
-  padding: 10px 0;
   min-width: 205px;
+  padding: 10px 0;
 
   &::after {
     @include pseudo;
     position: absolute;
+    position: absolute;
+    top: 15px;
+    right: -40px;
     width: 10px;
     height: 10px;
     background-image: url("../../../img/dropdown__arrow--black.png");
     transition: all 0.3s;
-    position: absolute;
-    right: -40px;
-    top: 15px;
   }
 }
 
@@ -30,21 +30,21 @@
   .submenu {
     @include page-wrapper;
     position: fixed;
-    background-color:transparent;
+    top: 175px;
+    left: 0;
     z-index: 500;
     width: 100%;
-    left: 0;
-    top: 175px;
+    background-color: transparent;
   }
 
   .submenu__wrapper {
-    width: 100%;
-    border-top: 1px solid #E0E0E0;
-    margin-top: 50px;
-    pointer-events: painted;
-    background-color: white;
     position: relative;
     display: flex;
+    width: 100%;
+    margin-top: 50px;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    pointer-events: painted;
   }
 
   .submenu__list {
@@ -60,9 +60,9 @@
   }
 
   .submenu__column-title {
-    text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
+    text-transform: uppercase;
   }
 
   .submenu__image {
@@ -71,17 +71,17 @@
   }
 
   .submenu__img {
-    opacity: 0;
     position: absolute;
+    top: 0;
+    right: 0;
     width: 437px;
     height: 305px;
-    right: 0;
-    top: 0;
+    opacity: 0;
   }
 
   .submenu__link:hover + .submenu__img {
-    opacity: 1;
     display: block;
+    opacity: 1;
   }
 
   .submenu__link:hover {
