@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="page">
+  @@include('../blocks/header/header.html')
   <main class="page__main">
     <section class="promo">
       <h1 class="visually-hidden">Заголовок h1</h1>
@@ -28,6 +29,53 @@
         </li>
       </ul>
     </section>
+
+    <section class="brands">
+      <ul class="brands__list">
+        <li class="brands__item">
+          <div class="brands__img"></div>
+          <strong class="brand__name">Fendi</strong>
+        </li>
+        <li class="brands__item">
+          <div class="brands__img"></div>
+          <strong class="brand__name">ALESSANDRO BEATO</strong>
+        </li>
+        <li class="brands__item">
+          <div class="brands__img"></div>
+          <strong class="brand__name">DAVID JONES</strong>
+        </li>
+      </ul>
+    </section>
+
+    <section class="novelty">
+      <h2>Новинки</h2>
+
+      <ul class="novetly__list">
+        <li class="novetly__item">
+          <div class="novetly__img"></div>
+          <button type="button">Быстрый просмотр</button>
+          <p class="novetly__brand">Fabio Bruno</p>
+          <p class="novetly__name">Сумка через плечо</p>
+          <p class="novetly__price">6 260 руб.</p>
+        </li>
+        <li class="novetly__item">
+          <div class="novetly__img"></div>
+          <button type="button">Быстрый просмотр</button>
+          <p class="novetly__brand">Fabio Bruno</p>
+          <p class="novetly__name">Сумка через плечо</p>
+          <p class="novetly__price">6 260 руб.</p>
+        </li>
+        <li class="novetly__item">
+          <div class="novetly__img"></div>
+          <button type="button">Быстрый просмотр</button>
+          <p class="novetly__brand">Fabio Bruno</p>
+          <p class="novetly__name">Сумка через плечо</p>
+          <p class="novetly__price">6 260 руб.</p>
+        </li>
+      </ul>
+      <a class="novetly__more button" href="">Показать больше</a>
+    </section>
+
     <section class="sales">
       <h2 class="visually-hidden">Распродажи</h2>
       <ul class="sales__list">

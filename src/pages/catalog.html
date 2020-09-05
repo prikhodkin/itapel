@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+        <title>Страница каталога</title>
+        @@include('../blocks/favicon/favicon.html')
+        <script src="js/vendor.js" defer></script>
+        <script src="js/general.js" defer></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="page">
+        @@include('../blocks/header/header.html')
+        <main class="page__main">
+            <section class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li>
+                        <a class="breadcrumbs__link" href="">Главная</a>   
+                    </li>
+                    <li>
+                        <a class="breadcrumbs__link" href="">Сумки</a>   
+                    </li>
+                </ul>
+            </section>
+
+            <h1>Сумки женские</h1>
+
+            <section class="filters">
+                <ul class="filters__list">
+                    <li class="filters__category">
+                        <div>
+                            <p>Категория</p>
+                            <button type="button" class="filters__arrow">Свернуть</button>
+                        </div>
+                        <ul>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Новинки</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Эксклюзивы</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Деловые сумки</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Дизайнерские сумки</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Дорожные сумки</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Классические сумки</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Клатчи</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Рюкзаки</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Сумки на пояс</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Сумки с принтом</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Сумки через плечо</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Экосумки</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__category">
+                        <div>
+                            <p>Цена</p>
+                            <button type="button" class="filters__arrow">Свернуть</button>
+                        </div>
+                        <div>
+                            <label>
+                                <p>от</p>
+                                <input type="text" value="6 000 руб">
+                            </label>
+                            <label>
+                                <p>до</p>
+                                <input type="text" value="20 000 руб">
+                            </label>
+                        </div>
+                        <div class="filters__range">
+                            <button type="button" class="filters__min-range"></button>
+                            <button type="button" class="filters__max-range"></button>
+                        </div>
+                    </li>
+                    <li class="filters__category">
+                        <div>
+                            <p>Бренд</p>
+                            <button type="button" class="filters__arrow">Свернуть</button>
+                        </div>
+                        <ul>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Бренд 1</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Бренд 2</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- C размерами разобраться -->
+                    <li class="filters__category">
+                        <div>
+                            <p>Размер</p>
+                            <button type="button" class="filters__arrow">Свернуть</button>
+                        </div>
+                        <!-- <ul>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p></p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p></p>
+                                </label>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="filters__category">
+                        <div>
+                            <p>Цвет</p>
+                            <button type="button" class="filters__arrow">Свернуть</button>
+                        </div>
+                        <ul>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__color">
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__color">
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__category">
+                        <div>
+                            <p>Материал</p>
+                            <button type="button" class="filters__arrow">Свернуть</button>
+                        </div>
+                        <ul>
+                            <li class="filters__item">
+                                <label>
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Материал 1</p>
+                                </label>
+                            </li>
+                            <li class="filters__item">
+                                <label> 
+                                    <input type="checkbox" class="filters__checkbox">
+                                    <p>Материал 2</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="products">
+                <div class="sort">
+                    <ul class="sort__list">
+                        <li>
+                            <p>Сортировать по:</p>
+                        </li>
+                        <li class="sort__item sort__item--active">
+                            <label>
+                                <input type="radio" name="products-sort" checked>
+                                <p>Популярности</p>
+                            </label>
+                        </li>
+                        <li class="sort__item">
+                            <label>
+                                <input type="radio" name="products-sort">
+                                <p>Рейтингу</p>
+                            </label>
+                        </li>
+                        <li class="sort__item">
+                            <label>
+                                <input type="radio" name="products-sort">
+                                <p>Цене</p>
+                            </label>
+                        </li>
+                        <li class="sort__item">
+                            <label>
+                                <input type="radio" name="products-sort">
+                                <p>Скидке</p>
+                            </label>
+                        </li>
+                        <li class="sort__item">
+                            <label>
+                                <input type="radio" name="products-sort">
+                                <p>Обновлению</p>
+                            </label>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="products__wrapper">
+                    <ul>
+                        <li class="products__item">
+                            <div class="products__fav">
+                                <a href="#" class="add-fav" data-turbolinks="false">
+                                    <svg width="24" height="22">
+                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="products__basket"></a>
+                            </div>
+                            <div class="products__img novetly__img"></div>
+                            <button type="button" class="products__button">Быстрый просмотр</button>
+                            <p class="products__brand novetly__brand">Fabio Bruno</p>
+                            <p class="products__name novetly__name">Сумка через плечо</p>
+                            <div>
+                                <p class="products__new-price novetly__price">6 260 руб.</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__sale">
+                                <p>- 30%</p>
+                            </div>
+                            <div class="products__fav">
+                                <a href="#" class="add-fav" data-turbolinks="false">
+                                    <svg width="24" height="22">
+                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="products__basket"></a>
+                            </div>
+                            <div class="products__img novetly__img"></div>
+                            <button type="button" class="products__button">Быстрый просмотр</button>
+                            <p class="products__brand novetly__brand">Fabio Bruno</p>
+                            <p class="products__name novetly__name">Сумка через плечо</p>
+                            <div>
+                                <p class="products__old-price"><strike>6 260 руб.</strike></p>
+                                <p class="products__new-price novetly__price">4 500 руб.</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__fav">
+                                <a href="#" class="add-fav" data-turbolinks="false">
+                                    <svg width="24" height="22">
+                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="products__basket"></a>
+                            </div>
+                            <div class="products__img novetly__img"></div>
+                            <button type="button" class="products__button">Быстрый просмотр</button>
+                            <p class="products__brand novetly__brand">Fabio Bruno</p>
+                            <p class="products__name novetly__name">Сумка через плечо</p>
+                            <div>
+                                <p class="products__new-price novetly__price">6 260 руб.</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__fav">
+                                <a href="#" class="add-fav" data-turbolinks="false">
+                                    <svg width="24" height="22">
+                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="products__basket"></a>
+                            </div>
+                            <div class="products__img novetly__img"></div>
+                            <button type="button" class="products__button">Быстрый просмотр</button>
+                            <p class="products__brand novetly__brand">Fabio Bruno</p>
+                            <p class="products__name novetly__name">Сумка через плечо</p>
+                            <div>
+                                <p class="products__new-price novetly__price">6 260 руб.</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__fav">
+                                <a href="#" class="add-fav" data-turbolinks="false">
+                                    <svg width="24" height="22">
+                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="products__basket"></a>
+                            </div>
+                            <div class="products__img novetly__img"></div>
+                            <button type="button" class="products__button">Быстрый просмотр</button>
+                            <p class="products__brand novetly__brand">Fabio Bruno</p>
+                            <p class="products__name novetly__name">Сумка через плечо</p>
+                            <div>
+                                <p class="products__new-price novetly__price">6 260 руб.</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__fav">
+                                <a href="#" class="add-fav" data-turbolinks="false">
+                                    <svg width="24" height="22">
+                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="products__basket"></a>
+                            </div>
+                            <div class="products__img novetly__img"></div>
+                            <button type="button" class="products__button">Быстрый просмотр</button>
+                            <p class="products__brand novetly__brand">Fabio Bruno</p>
+                            <p class="products__name novetly__name">Сумка через плечо</p>
+                            <div>
+                                <p class="products__new-price novetly__price">6 260 руб.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <a href="" class="move-top">Вверх</a>
+        </main>
+        @@include('../blocks/footer/footer.html')
+    </body>
+</html>

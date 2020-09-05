@@ -1,0 +1,160 @@
+.header__main {
+  padding: 20px 20px;
+}
+
+.header__top-row {
+  font-size: 12px;
+  padding: 8px 0;
+  color: white;
+  background-color: $main;
+  display: flex;
+}
+
+.header__link {
+  display: block;
+  width: 90px;
+  height: 23px ;
+  order: 3;
+  margin-top: -5px;
+}
+
+.header__phone {
+  margin: 0 auto;
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.header__mail {
+  display: none;
+}
+
+.header__sections {
+  display: flex;
+  justify-content: space-between;
+
+  &--menu {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 11;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.header__search-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+  order: 1;
+}
+
+.header__search-input {
+  display: none;
+  font-size: 12px;
+
+  &--active {
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 11;
+    padding: 15px;
+    padding-left: 20px;
+    width: 100%;
+    border: none;
+  }
+}
+
+.header__search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  span {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__top-row {
+    justify-content: space-between;
+    padding: 8px 20px;
+  }
+
+  .header__mail {
+    display: block;
+  }
+
+  .header__phone {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__main {
+    @include page-wrapper;
+    padding-top: 40px;
+  }
+
+  .header__top-row {
+    @include page-wrapper;
+    font-size: 14px;
+  }
+
+  .header__sections {
+    align-items: center;
+
+    &--menu {
+      display: block;
+      padding: 50px 0;
+    }
+  }
+
+  .header__link {
+    width: 125px;
+    height: 32px;
+    order: 1;
+  }
+
+  .header__search-wrap {
+    width: 844px;
+  }
+
+  .header__hamb {
+    display: none;
+  }
+
+  .header__form {
+    position: relative;
+    width: 100%;
+  }
+
+  .header__search-input {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 12px;
+    border-radius: 50px;
+    border-width: 1px;
+  }
+
+  .header__search-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

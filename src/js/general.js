@@ -12,4 +12,6 @@ listen(`click`, `.add-fav`, addFavorite)
 
 if(window.matchMedia("(max-width: 767px)").matches) {
   listen(`click`, `[data-dropdown]`, openDropdown);
+  listen(`click`, `[menu-main__item]`, openDropdown);
+
 }
