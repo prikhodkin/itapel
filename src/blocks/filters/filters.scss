@@ -138,3 +138,59 @@
     }
   }
 }
+
+.filters__extra {
+  display: flex;
+  justify-content: space-between;
+
+  .js-input-from,
+  .js-input-to {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+  }
+
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    align-items: center;
+  }
+}
+
+.range-slider {
+  padding: 10px 0;
+  .irs-handle {
+    background-color: black!important;
+    border-radius: 50%;
+  }
+
+  .irs-from,
+  .irs-to,
+  .irs-min,
+  .irs-max {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .filters {
+    margin: 0;
+  }
+
+  .filters__main-title {
+    display: none;
+  }
+
+  .filters__list {
+    position: relative;
+    width: 340px;
+  }
+
+  .filters__category .dropdown__list,
+  .filters__price {
+    display: none;
+  }
+}

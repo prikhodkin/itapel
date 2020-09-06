@@ -40,9 +40,9 @@ showInput();
 addAdress();
 
 listen(`click`, `.add-fav`, addFavorite)
+listen(`click`, `[filter-dropdown]`, openDropdown);
 listen(`click`, `.personal__del`, removeItem)
 
 if(window.matchMedia("(max-width: 767px)").matches) {
   listen(`click`, `[data-dropdown]`, openDropdown);
-  listen(`click`, `[menu-main__item]`, openDropdown);
 }
