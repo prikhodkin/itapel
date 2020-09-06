@@ -1,0 +1,44 @@
+.user-profile__list {
+  @include list-reset;
+  margin-bottom: 29px;
+}
+
+.user-profile__link {
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  &--active {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .user-profile__link {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: unset;
+
+    &--active {
+      font-weight: 500;
+    }
+  }
+
+  .user-profile__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  .user-profile__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 66px;
+  }
+}

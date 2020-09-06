@@ -13,12 +13,28 @@
     @@include('../blocks/header/header.html')
     <main class="page__main">
       <a href="" class="basket__back-link">Назад к покупкам</a>
-      <h1 class="basket__title">Личный профиль</h1>
-      @@include('../blocks/user-profile/user-profile.html')
-
-      <div class="my-sales">
-        <strong>Вам доступна скидка на оптовые заказы - 10%</strong>
-      </div>
+      <section class="profile">
+        <h1 class="profile__title title">Личный профиль</h1>
+        <div class="profile__nav user-profile">
+          <ul class="user-profile__list">
+            <li class="user-profile__item">
+              <a class="user-profile__link" href="personal-data.html">Личные данные</a>
+            </li>
+            <li class="user-profile__item">
+              <a class="user-profile__link" href="my-orders.html">Мои заказы</a>
+            </li>
+            <li class="user-profile__item">
+              <a class="user-profile__link" href="#">Уведомления</a>
+            </li>
+            <li class="user-profile__item">
+              <a class="user-profile__link user-profile__link--active" href="my-sales.html">Мои скидки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile__sale">
+          <strong>Вам доступна скидка на оптовые заказы - 10%</strong>
+        </div>
+      </section>
     </main>
     @@include('../blocks/footer/footer.html')
   </body>

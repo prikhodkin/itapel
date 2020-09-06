@@ -1,0 +1,43 @@
+.profile {
+  padding: 10px 20px 85px 20px;
+}
+
+.profile__title {
+  display: none;
+  margin-bottom: 42px;
+  padding: 0;
+}
+
+.profile__sale {
+  padding: 43px 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background: #f8f8f8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile__orders {
+  @include list-reset;
+}
+
+.profile__order {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile__title {
+    display: block;
+    margin-bottom: 27px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .profile {
+    @include page-wrapper;
+  }
+}

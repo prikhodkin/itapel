@@ -13,55 +13,55 @@
     @@include('../blocks/header/header.html')
     <main class="page__main">
       <a href="" class="basket__back-link">Назад к покупкам</a>
-      <h1 class="basket__title">Личный профиль</h1>
-      @@include('../blocks/user-profile/user-profile.html')
-
-      <ul class="orders">
-        <li class="orders__item">
-          <ul class="orders__item-list">
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Дата: <span class="basket__text-gray--bold">11.08.2020</span></p>
+      <section class="profile">
+        <h1 class="profile__title title">Личный профиль</h1>
+        <div class="profile__nav user-profile">
+          <ul class="user-profile__list">
+            <li class="user-profile__item">
+              <a class="user-profile__link" href="personal-data.html">Личные данные</a>
             </li>
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Доставка: <span class="orders__text basket__text-gray--bold">Пункт выдачи</span></p>
-              <p class="orders__text basket__text-gray">г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</p>
+            <li class="user-profile__item">
+              <a class="user-profile__link user-profile__link--active" href="my-orders.html">Мои заказы</a>
             </li>
-            <li class="orders__row">
-              <p>Итого: 6 260 руб.</p>
-              <p class="orders__text basket__text-gray">Товары: <span class="basket__text-gray--bold">6 000 руб.</span></p>
-              <p class="orders__text basket__text-gray">Стоимость доставки: <span class="basket__text-gray--bold">260 руб.</span></p>
+            <li class="user-profile__item">
+              <a class="user-profile__link" href="#">Уведомления</a>
             </li>
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Оплата: <span class="basket__text-gray--bold">Онлайн</span></p>
-            </li>
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Статус: <span class="basket__text-gray--bold">Завершен</span></p>
+            <li class="user-profile__item">
+              <a class="user-profile__link " href="my-sales.html">Мои скидки</a>
             </li>
           </ul>
-        </li>
-        <li class="orders__item">
-          <ul class="orders__item-list">
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Дата: <span class="basket__text-gray--bold">11.08.2020</span></p>
-            </li>
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Доставка: <span class="orders__text basket__text-gray--bold">Пункт выдачи</span></p>
-              <p class="orders__text basket__text-gray">г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</p>
-            </li>
-            <li class="orders__row">
-              <p>Итого: 6 260 руб.</p>
-              <p class="orders__text basket__text-gray">Товары: <span class="basket__text-gray--bold">6 000 руб.</span></p>
-              <p class="orders__text basket__text-gray">Стоимость доставки: <span class="basket__text-gray--bold">260 руб.</span></p>
-            </li>
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Оплата: <span class="basket__text-gray--bold">Онлайн</span></p>
-            </li>
-            <li class="orders__row">
-              <p class="orders__text basket__text-gray">Статус: <span class="basket__text-gray--bold">Завершен</span></p>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+        <ul class="profile__orders">
+          <li class="profile__order order">
+            <p class="order__date order__row"><span>Дата:</span> 11.08.2020</p>
+            <div class="order__delivery">
+              <p class="order__row"><span>Доставка:</span>  Пункт выдачи</p>
+              <p class="order__row"><span>г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</span></p>
+            </div>
+            <div class="order__result">
+              <p class="order__row"><span>Товары:</span>  6 000 руб.</p>
+              <p class="order__row"><span>Стоимость доставки: </span> 260 руб.</p>
+              <p class="order__price">ИТОГО: 6 260 руб. </p>
+            </div>
+            <p class="order__row order__payment"><span>Оплата: </span>Онлайн</p>
+            <p class="order__row order__status"><span>Статус: </span>Завершен</p>
+          </li>
+          <li class="profile__order order">
+            <p class="order__date order__row"><span>Дата:</span> 11.08.2020</p>
+            <div class="order__delivery">
+              <p class="order__row"><span>Доставка:</span>  Пункт выдачи</p>
+              <p class="order__row"><span>г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</span></p>
+            </div>
+            <div class="order__result">
+              <p class="order__row"><span>Товары:</span>  6 000 руб.</p>
+              <p class="order__row"><span>Стоимость доставки: </span> 260 руб.</p>
+              <p class="order__price">ИТОГО: 6 260 руб. </p>
+            </div>
+            <p class="order__row order__payment"><span>Оплата: </span>Онлайн</p>
+            <p class="order__row order__status"><span>Статус: </span>Завершен</p>
+          </li>
+        </ul>
+      </section>
     </main>
     @@include('../blocks/footer/footer.html')
   </body>

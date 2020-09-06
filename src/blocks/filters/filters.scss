@@ -7,18 +7,18 @@
 
 .filters__list {
   position: absolute;
-  background: white;
+  left: 0;
   z-index: 10;
   width: 100%;
   max-width: 500px;
-  left: 0;
   padding: 20px 30px;
+  background: white;
 }
 
 .filters__main-title {
-  font-size: 12px;
-  font-weight: 500;
   position: relative;
+  font-weight: 500;
+  font-size: 12px;
 
   &::after {
     @include pseudo;
@@ -46,21 +46,21 @@
 
 .filters__point {
   position: relative;
-  font-size: 16px;
-  font-weight: 500;
-  border-bottom: 1px solid #C4C4C4;
   padding: 10px 0 20px 0;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid #c4c4c4;
 
   &::after {
     @include pseudo;
     position: absolute;
     top: 15px;
-    right: 0px;
+    right: 0;
     width: 10px;
     height: 10px;
     background-image: url("../../../img/dropdown__arrow--black.png");
     transition: all 0.3s;
-}
+  }
 }
 
 .filters__category {
@@ -81,18 +81,18 @@
 }
 
 .filters__check {
-  border-radius: 0;
-  width: 50px;
-  height: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
   margin-right: 0;
-  background-color: white;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   text-transform: uppercase;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0;
 
   &::before {
     content: none;
@@ -100,7 +100,6 @@
 }
 
 .filters__color {
-
   &--red {
     background-color: red;
   }
@@ -127,10 +126,9 @@
 }
 
 .filters__checkbox {
-
   &:focus {
     & ~ .filters__check {
-      border: 1 px solid rgba(0, 0 , 0, 0.5);
+      border: 1 px solid rgba(0, 0, 0, 0.5);
     }
   }
 

@@ -1,6 +1,6 @@
 .products {
-  padding: 40px 20px;
   position: relative;
+  padding: 40px 20px;
 }
 
 .products__list {
@@ -29,7 +29,6 @@
 }
 
 .products__basket {
-
   svg {
     width: 30px;
     height: 30px;
@@ -41,24 +40,25 @@
 }
 
 .products__fav {
-  display: none;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0 20px;
   position: absolute;
   z-index: 10;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .products__move-top {
+
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
   width: 45px;
   height: 45px;
   padding: 0;
   background: no-repeat center #2d2d2d url("../../img/dropdown__arrow.png");
   transform: rotate(-180deg);
 
-  position: absolute;
-  right: 20px;
-  bottom: 30px;
   span {
     display: none;
   }
