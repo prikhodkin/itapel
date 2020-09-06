@@ -1,0 +1,23 @@
+.content {
+  padding: 10px 20px 70px 20px;
+}
+
+.content__title {
+  margin-bottom: 23px;
+}
+
+@media (min-width: 1280px) {
+  .content {
+    @include page-wrapper;
+    padding-top: 0;
+    padding-bottom: 150px;
+
+    .text-block {
+      max-width: 1220px;
+    }
+  }
+
+  .content__title {
+    margin-bottom: 58px;
+  }
+}
