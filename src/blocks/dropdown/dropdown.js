@@ -1,7 +1,7 @@
 import {$, fadeIn, fadeOut, listen} from "../../js/util";
 
 const openDropdown = (event, item) => {
-    event.preventDefault();
+    // event.preventDefault();
     const target = event.target.closest(`[data-dropdown-trigger]`);
     const list = $(`[data-dropdown-list]`, item);
 

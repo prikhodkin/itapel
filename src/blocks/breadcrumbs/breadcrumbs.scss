@@ -1,0 +1,34 @@
+.breadcrumbs__list {
+  display: flex;
+  justify-content: center;
+
+  li:not(:last-child) {
+    padding-right: 30px;
+  }
+}
+
+.breadcrumbs__link {
+  color: #A2A2A2;
+  font-size: 12px;
+  position: relative;
+
+
+  &::after {
+    content: "-";
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font-size: 22px;
+  }
+
+  &--current,
+  &--back {
+
+    &::after {
+      display: none;
+    }
+  }
+}

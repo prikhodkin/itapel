@@ -26,6 +26,12 @@ h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: 14;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 a {
   color: inherit;
   text-decoration: unset;
@@ -56,5 +62,9 @@ a {
   .hidden {
     display: block;
     opacity: 1;
+  }
+
+  h1 {
+    font-size: 18;
   }
 }
