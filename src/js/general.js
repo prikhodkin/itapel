@@ -6,6 +6,7 @@ import cardSlider from "%modules%/card/card"
 import addFavorite from "%modules%/add-fav/add-fav";
 import openDropdown from "%modules%/dropdown/dropdown";
 import {Popup, PopupThanks } from "%modules%/popup/popup";
+import showInput from "%modules%/organization/organization";
 const promoList = document.querySelector(`.promo__list`);
 const cards = document.querySelectorAll(`.card__inner`);
 const tab = document.querySelectorAll(`.tabs`);
@@ -28,6 +29,7 @@ if(cards) {
   })
 }
 
+showInput();
 
 if(promoList) {
   promoSlider();

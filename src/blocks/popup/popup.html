@@ -131,3 +131,54 @@
     </div>
   </div>
 </div>
+<div class="popup popup--one-click" data-popup="enter">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button class="popup__close">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+      <div class="one-click">
+        <p class="one-click__title title">ВОЙТИ / <a class="get-popup" data-popup="reg" href="#">СОЗДАТЬ ПРОФИЛЬ</a></p>
+        <form action="">
+          <input type="email" class="input" placeholder="Email" required>
+          <input type="password" class="input" placeholder="Пароль" required>
+          <button class="one-click__button button">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup popup--reg popup--one-click" data-popup="reg">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button class="popup__close">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+      <div class="one-click">
+        <p class="one-click__title title"><a class="get-popup" data-popup="enter" href="#">ВОЙТИ</a> / СОЗДАТЬ ПРОФИЛЬ</p>
+        <form action="" class="organization">
+          <input type="text" class="input" placeholder="Ваше имя" required>
+          <input type="text" class="input organization__input" placeholder="Ваша организация" required>
+          <input type="tel" class="input organization__input" placeholder="+7 ___ __ __" required>
+          <input type="email" class="input" placeholder="Email" required>
+          <input type="password" class="input" placeholder="Придумайте пароль " required>
+          <button class="one-click__button button">Зарегистрироваться </button>
+          <label class="radio">
+            <input type="checkbox" name="ff" class="radio__input organization__checkbox">
+            <span class="radio__circle"></span>
+            <span class="radio__text">Я оптовый покупатель</span>
+          </label>
+          <label class="radio">
+            <input type="checkbox" name="ff" class="radio__input" checked>
+            <span class="radio__circle"></span>
+            <span class="radio__text">Я согласен с условиями <a href="">Публичной оферты</a></span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

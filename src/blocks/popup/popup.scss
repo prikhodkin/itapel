@@ -24,6 +24,27 @@
       transition: opacity 0.3s, transform 0.5s;
     }
   }
+
+  &--reg {
+    .button {
+      margin-top: 28px;
+      margin-bottom: 30px;
+    }
+
+    .radio {
+      justify-content: center;
+      margin-bottom: 14px;
+      white-space: nowrap;
+
+      a {
+        color: #a2a2a2;
+      }
+
+      .radio__circle {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 

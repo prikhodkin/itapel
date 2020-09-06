@@ -1,6 +1,6 @@
 .favorites__list {
-  @include list-reset
-    display: flex;
+  @include list-reset;
+  display: flex;
   flex-wrap: wrap;
   margin: -5px;
 }
