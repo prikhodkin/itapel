@@ -38,9 +38,8 @@ if(promoList) {
 
 
 listen(`click`, `.add-fav`, addFavorite)
-
+listen(`click`, `[filter-dropdown]`, openDropdown);
 
 if(window.matchMedia("(max-width: 767px)").matches) {
   listen(`click`, `[data-dropdown]`, openDropdown);
-  listen(`click`, `[menu-main__item]`, openDropdown);
 }

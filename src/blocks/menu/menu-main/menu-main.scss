@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 1280px) {
-  .menu-main__item a:hover + .submenu,
+  .menu-main__item p:hover + .submenu,
   .menu-main__item .submenu:hover {
     display: flex;
     opacity: 1;

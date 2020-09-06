@@ -69,3 +69,22 @@
     width: 30%;
   }
 }
+
+@media (min-width: 1280px) {
+  .products {
+    margin-top: 80px;
+  }
+
+  .products__item:hover > .products__fav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  .products__move-top {
+    width: 75px;
+    height: 75px;
+    right: -10px;
+    bottom: 70px;
+  }
+}

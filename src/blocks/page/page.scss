@@ -31,6 +31,10 @@
     padding-bottom: 92px;
   }
 
+  .page-wrapper {
+    @include page-wrapper;
+  }
+
   .page__main {
 
     h1 {

@@ -11,7 +11,7 @@
     </head>
     <body class="page">
         @@include('../blocks/header/header.html')
-        <main class="page__main">
+        <main class="page__main page-wrapper ">
             <section class="breadcrumbs">
                 <ul class="breadcrumbs__list list-style">
                     <li>
@@ -25,309 +25,364 @@
 
             <h1 class="page__title">Сумки женские</h1>
 
-            <section class="filters">
-              <div>
-                <p class="filters__main-title">Фильтры</p>
-                <ul class="filters__list list-style  dropdown__list">
-                    <li class="filters__category" data-dropdown>
-                            <p class="filters__point"  data-dropdown-trigger>Категория</p>
-                        <ul class="list-style hidden dropdown__list" data-dropdown-list>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat1" class="filters__checkbox" checked>
-                                    <span class="radio__circle"></span>
-                                    <p>Новинки</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat2" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Эксклюзивы</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat3" class="filters__checkbox">
+            <div class="catalog__wrapper">
+
+              <section class="filters">
+                <div data-dropdown>
+                  <p class="filters__main-title" data-dropdown-trigger>Фильтры</p>
+                  <ul class="filters__list list-style hidden dropdown__list" data-dropdown-list>
+                      <li class="filters__category" filter-dropdown>
+                              <p class="filters__point"  data-dropdown-trigger>Категория</p>
+                          <ul class="list-style hidden dropdown__list" data-dropdown-list>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat1" class="filters__checkbox" checked>
                                       <span class="radio__circle"></span>
-                                      <p>Деловые сумки</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat4" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Дизайнерские сумки</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat5" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Дорожные сумки</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat6" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Классические сумки</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat7" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Клатчи</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat8" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Рюкзаки</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat9" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Сумки на пояс</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat10" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Сумки с принтом</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat11" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Сумки через плечо</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input class="radio__input" type="checkbox" name="cat12" class="filters__checkbox">
-                                    <span class="radio__circle"></span>
-                                    <p>Экосумки</p>
-                                </label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="filters__category" data-dropdown>
-                            <p class="filters__point" data-dropdown-trigger>Цена</p>
-                        <!-- <div class="hidden dropdown__list" data-dropdown-list>
-                            <label>
+                                      <p>Новинки</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat2" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Эксклюзивы</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat3" class="filters__checkbox">
+                                        <span class="radio__circle"></span>
+                                        <p>Деловые сумки</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat4" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Дизайнерские сумки</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat5" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Дорожные сумки</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat6" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Классические сумки</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat7" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Клатчи</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat8" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Рюкзаки</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat9" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Сумки на пояс</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat10" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Сумки с принтом</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat11" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Сумки через плечо</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input class="radio__input" type="checkbox" name="cat12" class="filters__checkbox">
+                                      <span class="radio__circle"></span>
+                                      <p>Экосумки</p>
+                                  </label>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="filters__category" filter-dropdown>
+                              <p class="filters__point" data-dropdown-trigger>Цена</p>
+                          <div class="filters__price hidden dropdown__list" data-dropdown-list>
+                            <div class="extra-controls filters__extra">
+                              <label>
                                 <p>от</p>
-                                <input type="text" value="6 000 руб">
-                            </label>
-                            <label>
+                                <input type="text" class="js-input-from" value="0" />
+                              </label>
+                              <label>
                                 <p>до</p>
-                                <input type="text" value="20 000 руб">
-                            </label>
-                        </div>
-                        <div class="filters__range">
-                            <button type="button" class="filters__min-range"></button>
-                            <button type="button" class="filters__max-range"></button>
-                        </div> -->
-                        <input type="text" class="js-range-slider" name="my_range" value="" />
-                    </li>
-                    <li class="filters__category" data-dropdown>
-                            <p class="filters__point" data-dropdown-trigger>Бренд</p>
-                        <ul class="list-style hidden dropdown__list" data-dropdown-list>
-                            <li class="filters__item">
-                                <label>
-                                    <input name="brand1" type="checkbox" class="radio__input" checked>
-                                    <span class="radio__circle"></span>
-                                    <p>Бренд 1</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input name="brand2" type="checkbox" class="radio__input">
-                                    <span class="radio__circle"></span>
-                                    <p>Бренд 2</p>
-                                </label>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- C размерами разобраться -->
-                    <li class="filters__category" data-dropdown>
-                            <p class="filters__point" data-dropdown-trigger>Размер</p>
-                            <div class="hidden dropdown__list" data-dropdown-list="">
-                              <ul class="list-style filters__sizes">
-                                <li class="filters__item">
-                                  <label>
-                                      <input type="checkbox" name="size1" class="radio__input filters__checkbox">
-                                      <span class="radio__circle filters__check filters__check--size">45</span>
-                                  </label>
-                                </li>
-                                <li class="filters__item">
-                                  <label>
-                                      <input type="checkbox" name="size2" class="radio__input filters__checkbox" checked>
-                                      <span class="radio__circle filters__check filters__check--size">s</span>
-                                  </label>
-                                </li>
-                                <li class="filters__item">
-                                  <label>
-                                      <input type="checkbox" name="size3" class="radio__input filters__checkbox">
-                                      <span class="radio__circle filters__check filters__check--size">xs</span>
-                                  </label>
-                                </li>
-                                <li class="filters__item">
-                                  <label>
-                                      <input type="checkbox" name="size4" class="radio__input filters__checkbox">
-                                      <span class="radio__circle filters__check filters__check--size">l</span>
-                                  </label>
-                                </li>
-                                <li class="filters__item">
-                                  <label>
-                                      <input type="checkbox" name="size5" class="radio__input filters__checkbox">
-                                      <span class="radio__circle filters__check filters__check--size">xxxl</span>
-                                  </label>
-                                </li>
-                                <li class="filters__item">
-                                  <label>
-                                      <input type="checkbox" name="size6" class="radio__input filters__checkbox">
-                                      <span class="radio__circle filters__check filters__check--size">m</span>
-                                  </label>
-                                </li>
-                                <li class="filters__item">
-                                  <label>
-                                      <input type="checkbox" name="size7" class="radio__input filters__checkbox" checked>
-                                      <span class="radio__circle filters__check filters__check--size">xm</span>
-                                  </label>
-                                </li>
-                              </ul>
+                                <input type="text" class="js-input-to" value="0" />
+                              </label>
+                            </div>
+                            <div class="range-slider">
+                              <input type="text" class="js-range-slider" value="" />
+                            </div>
                           </div>
-                    </li>
-                    <li class="filters__category" data-dropdown>
-                            <p class="filters__point" data-dropdown-trigger>Цвет</p>
-                            <div class="hidden dropdown__list" data-dropdown-list>
-                              <ul class="list-style filters__color-list">
+
+                      </li>
+                      <li class="filters__category" filter-dropdown>
+                              <p class="filters__point" data-dropdown-trigger>Бренд</p>
+                          <ul class="list-style hidden dropdown__list" data-dropdown-list>
+                              <li class="filters__item">
+                                  <label>
+                                      <input name="brand1" type="checkbox" class="radio__input" checked>
+                                      <span class="radio__circle"></span>
+                                      <p>Бренд 1</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input name="brand2" type="checkbox" class="radio__input">
+                                      <span class="radio__circle"></span>
+                                      <p>Бренд 2</p>
+                                  </label>
+                              </li>
+                          </ul>
+                      </li>
+                      <!-- C размерами разобраться -->
+                      <li class="filters__category" filter-dropdown>
+                              <p class="filters__point" data-dropdown-trigger>Размер</p>
+                              <div class="hidden dropdown__list" data-dropdown-list="">
+                                <ul class="list-style filters__sizes">
                                   <li class="filters__item">
-                                      <label>
-                                          <input type="checkbox" name="color1" class="radio__input filters__checkbox" checked>
-                                          <span class="radio__circle filters__check"></span>
-                                      </label>
+                                    <label>
+                                        <input type="checkbox" name="size1" class="radio__input filters__checkbox">
+                                        <span class="radio__circle filters__check filters__check--size">45</span>
+                                    </label>
                                   </li>
                                   <li class="filters__item">
+                                    <label>
+                                        <input type="checkbox" name="size2" class="radio__input filters__checkbox" checked>
+                                        <span class="radio__circle filters__check filters__check--size">s</span>
+                                    </label>
+                                  </li>
+                                  <li class="filters__item">
+                                    <label>
+                                        <input type="checkbox" name="size3" class="radio__input filters__checkbox">
+                                        <span class="radio__circle filters__check filters__check--size">xs</span>
+                                    </label>
+                                  </li>
+                                  <li class="filters__item">
+                                    <label>
+                                        <input type="checkbox" name="size4" class="radio__input filters__checkbox">
+                                        <span class="radio__circle filters__check filters__check--size">l</span>
+                                    </label>
+                                  </li>
+                                  <li class="filters__item">
+                                    <label>
+                                        <input type="checkbox" name="size5" class="radio__input filters__checkbox">
+                                        <span class="radio__circle filters__check filters__check--size">xxxl</span>
+                                    </label>
+                                  </li>
+                                  <li class="filters__item">
+                                    <label>
+                                        <input type="checkbox" name="size6" class="radio__input filters__checkbox">
+                                        <span class="radio__circle filters__check filters__check--size">m</span>
+                                    </label>
+                                  </li>
+                                  <li class="filters__item">
+                                    <label>
+                                        <input type="checkbox" name="size7" class="radio__input filters__checkbox" checked>
+                                        <span class="radio__circle filters__check filters__check--size">xm</span>
+                                    </label>
+                                  </li>
+                                </ul>
+                            </div>
+                      </li>
+                      <li class="filters__category" filter-dropdown>
+                              <p class="filters__point" data-dropdown-trigger>Цвет</p>
+                              <div class="hidden dropdown__list" data-dropdown-list>
+                                <ul class="list-style filters__color-list">
+                                    <li class="filters__item">
+                                        <label>
+                                            <input type="checkbox" name="color1" class="radio__input filters__checkbox" checked>
+                                            <span class="radio__circle filters__check"></span>
+                                        </label>
+                                    </li>
+                                    <li class="filters__item">
+                                        <label>
+                                            <input type="checkbox" name="color2" class="radio__input filters__checkbox">
+                                            <span class="radio__circle filters__check filters__color--red"></span>
+                                        </label>
+                                    </li>
+                                    <li class="filters__item">
                                       <label>
-                                          <input type="checkbox" name="color2" class="radio__input filters__checkbox">
-                                          <span class="radio__circle filters__check filters__color--red"></span>
+                                          <input type="checkbox" name="color3" class="radio__input filters__checkbox">
+                                          <span class="radio__circle filters__check filters__color--blue"></span>
                                       </label>
                                   </li>
                                   <li class="filters__item">
                                     <label>
-                                        <input type="checkbox" name="color3" class="radio__input filters__checkbox">
-                                        <span class="radio__circle filters__check filters__color--blue"></span>
+                                        <input type="checkbox" name="color4" class="radio__input filters__checkbox">
+                                        <span class="radio__circle filters__check filters__color--orange"></span>
                                     </label>
                                 </li>
                                 <li class="filters__item">
                                   <label>
-                                      <input type="checkbox" name="color4" class="radio__input filters__checkbox">
-                                      <span class="radio__circle filters__check filters__color--orange"></span>
+                                      <input type="checkbox" name="color5" class="radio__input filters__checkbox">
+                                      <span class="radio__circle filters__check filters__color--yellow"></span>
                                   </label>
                               </li>
                               <li class="filters__item">
                                 <label>
-                                    <input type="checkbox" name="color5" class="radio__input filters__checkbox">
-                                    <span class="radio__circle filters__check filters__color--yellow"></span>
+                                    <input type="checkbox" name="color6" class="radio__input filters__checkbox">
+                                    <span class="radio__circle filters__check filters__color--green"></span>
                                 </label>
                             </li>
                             <li class="filters__item">
                               <label>
-                                  <input type="checkbox" name="color6" class="radio__input filters__checkbox">
-                                  <span class="radio__circle filters__check filters__color--green"></span>
+                                  <input type="checkbox" name="color7" class="radio__input filters__checkbox">
+                                  <span class="radio__circle filters__check filters__color--white"></span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="filters__category" filter-dropdown>
+                              <p class="filters__point" data-dropdown-trigger>Материал</p>
+                          <ul class="list-style hidden dropdown__list" data-dropdown-list>
+                              <li class="filters__item">
+                                  <label>
+                                      <input type="checkbox" class="radio__input">
+                                      <span class="radio__circle"></span>
+                                      <p>Материал 1</p>
+                                  </label>
+                              </li>
+                              <li class="filters__item">
+                                  <label>
+                                      <input type="checkbox" class="radio__input">
+                                      <span class="radio__circle"></span>
+                                      <p>Материал 2</p>
+                                  </label>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+                </div>
+
+                  <div class="sort" data-dropdown>
+                    <p class="sort__main-title" data-dropdown-trigger>Сортировать</p>
+                    <div class="sort__list-wrap hidden dropdown__list" data-dropdown-list>
+                      <p class="sort__title">Сортировать по:</p>
+                      <ul class="sort__list list-style">
+
+                          <li class="sort__item sort__item--active">
+                              <label>
+                                  <input class="radio__input" type="radio" name="products-sort" checked>
+                                  <span class="radio__circle"></span>
+                                  <p class="radio__text">Популярности</p>
                               </label>
                           </li>
-                          <li class="filters__item">
-                            <label>
-                                <input type="checkbox" name="color7" class="radio__input filters__checkbox">
-                                <span class="radio__circle filters__check filters__color--white"></span>
-                            </label>
+                          <li class="sort__item">
+                              <label>
+                                  <input class="radio__input" type="radio" name="products-sort">
+                                  <span class="radio__circle"></span>
+                                  <p class="radio__text">Рейтингу</p>
+                              </label>
                           </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="filters__category" data-dropdown>
-                            <p class="filters__point" data-dropdown-trigger>Материал</p>
-                        <ul class="list-style hidden dropdown__list" data-dropdown-list>
-                            <li class="filters__item">
-                                <label>
-                                    <input type="checkbox" class="radio__input">
-                                    <span class="radio__circle"></span>
-                                    <p>Материал 1</p>
-                                </label>
-                            </li>
-                            <li class="filters__item">
-                                <label>
-                                    <input type="checkbox" class="radio__input">
-                                    <span class="radio__circle"></span>
-                                    <p>Материал 2</p>
-                                </label>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-              </div>
+                          <li class="sort__item">
+                              <label>
+                                  <input class="radio__input" type="radio" name="products-sort">
+                                  <span class="radio__circle"></span>
+                                  <p class="radio__text">Цене</p>
+                              </label>
+                          </li>
+                          <li class="sort__item">
+                              <label>
+                                  <input class="radio__input" type="radio" name="products-sort">
+                                  <span class="radio__circle"></span>
+                                  <p class="radio__text">Скидке</p>
+                              </label>
+                          </li>
+                          <li class="sort__item">
+                              <label>
+                                  <input class="radio__input" type="radio" name="products-sort">
+                                  <span class="radio__circle"></span>
+                                  <p class="radio__text">Обновлению</p>
+                              </label>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+              </section>
+              <section class="products">
 
-                <div class="sort" data-dropdown>
-                  <p class="sort__main-title" data-dropdown-trigger>Сортировать</p>
-                  <div class="sort__list-wrap hidden dropdown__list" data-dropdown-list>
-                    <p class="sort__title">Сортировать по:</p>
-                    <ul class="sort__list list-style">
-
-                        <li class="sort__item sort__item--active">
-                            <label>
-                                <input class="radio__input" type="radio" name="products-sort" checked>
-                                <span class="radio__circle"></span>
-                                <p>Популярности</p>
-                            </label>
-                        </li>
-                        <li class="sort__item">
-                            <label>
-                                <input class="radio__input" type="radio" name="products-sort">
-                                <span class="radio__circle"></span>
-                                <p>Рейтингу</p>
-                            </label>
-                        </li>
-                        <li class="sort__item">
-                            <label>
-                                <input class="radio__input" type="radio" name="products-sort">
-                                <span class="radio__circle"></span>
-                                <p>Цене</p>
-                            </label>
-                        </li>
-                        <li class="sort__item">
-                            <label>
-                                <input class="radio__input" type="radio" name="products-sort">
-                                <span class="radio__circle"></span>
-                                <p>Скидке</p>
-                            </label>
-                        </li>
-                        <li class="sort__item">
-                            <label>
-                                <input class="radio__input" type="radio" name="products-sort">
-                                <span class="radio__circle"></span>
-                                <p>Обновлению</p>
-                            </label>
-                        </li>
-                    </ul>
-                  </div>
-              </div>
-            </section>
-            <section class="products">
-
-                <div class="products__wrapper">
+                  <div class="products__wrapper">
 
 
-                    <ul class="products__list list-style">
-                        <li class="products__item product-card">
+                      <ul class="products__list list-style">
+                          <li class="products__item product-card">
+                              <div class="products__fav">
+                                  <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                                      <svg width="24" height="22">
+                                      <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                      </svg>
+                                  </a>
+                                  <a href="" class="products__basket"><span>Корзина</span>
+                                    <svg width="14" height="14">
+                                      <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                                    </svg>
+                                  </a>
+                              </div>
+                              <a href="product.html" class="products__img product-card__img">
+                                <img src="../img/item.png" alt="product">
+                                <img src="../img/b1.png" alt="product" class="product-card__hide">
+                              </a>
+                              <a class="product-card__fast products__cart-fast" href="product.html">Быстрый просмотр</a>
+                              <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                              <p class="product-card__name">Сумка через плечо</p>
+                              <div class="product-card__prices">
+                                <p class="product-card__price">6 260 руб.</p>
+                              </div>
+                          </li>
+                          <li class="products__item  product-card">
+                              <div class="products__sale product-card__flag">
+                                  <p>- 30%</p>
+                              </div>
+                              <div class="products__fav">
+                                  <a href="#" class="add-fav" data-turbolinks="false">
+                                      <svg width="24" height="22">
+                                      <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                                      </svg>
+                                  </a>
+                                  <a href="" class="products__basket"><span>Корзина</span>
+                                    <svg width="14" height="14">
+                                      <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                                    </svg>
+                                  </a>
+                              </div>
+                              <a href="product.html" class="products__img product-card__img">
+                                <img src="../img/item.png" alt="product">
+                                <img src="../img/b1.png" alt="product" class="product-card__hide">
+                              </a>
+                              <a class="product-card__fast products__cart-fast" href="product.html">Быстрый просмотр</a>
+                              <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
+                              <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
+                              <div class="product-card__prices">
+                                  <p class="products__old-price"><strike>6 260 руб.</strike></p>
+                                  <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
+                              </div>
+                          </li>
+                          <li class="products__item product-card">
                             <div class="products__fav">
                                 <a href="#" class="add-fav products__heart" data-turbolinks="false">
                                     <svg width="24" height="22">
@@ -349,30 +404,6 @@
                             <p class="product-card__name">Сумка через плечо</p>
                             <div class="product-card__prices">
                               <p class="product-card__price">6 260 руб.</p>
-                            </div>
-                        </li>
-                        <li class="products__item  product-card">
-                            <div class="products__sale product-card__flag">
-                                <p>- 30%</p>
-                            </div>
-                            <div class="products__fav">
-                                <a href="#" class="add-fav" data-turbolinks="false">
-                                    <svg width="24" height="22">
-                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                                    </svg>
-                                </a>
-                                <a href="" class="products__basket"></a>
-                            </div>
-                            <a href="product.html" class="products__img product-card__img">
-                              <img src="../img/item.png" alt="product">
-                              <img src="../img/b1.png" alt="product" class="product-card__hide">
-                            </a>
-                            <a class="product-card__fast products__cart-fast" href="product.html">Быстрый просмотр</a>
-                            <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
-                            <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
-                            <div class="product-card__prices">
-                                <p class="products__old-price"><strike>6 260 руб.</strike></p>
-                                <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
                             </div>
                         </li>
                         <li class="products__item product-card">
@@ -399,9 +430,12 @@
                             <p class="product-card__price">6 260 руб.</p>
                           </div>
                       </li>
-                      <li class="products__item product-card">
+                      <li class="products__item  product-card">
+                        <div class="products__sale product-card__flag">
+                            <p>- 30%</p>
+                        </div>
                         <div class="products__fav">
-                            <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <a href="#" class="add-fav" data-turbolinks="false">
                                 <svg width="24" height="22">
                                 <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
                                 </svg>
@@ -417,64 +451,42 @@
                           <img src="../img/b1.png" alt="product" class="product-card__hide">
                         </a>
                         <a class="product-card__fast products__cart-fast" href="product.html">Быстрый просмотр</a>
-                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
-                        <p class="product-card__name">Сумка через плечо</p>
+                        <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
                         <div class="product-card__prices">
-                          <p class="product-card__price">6 260 руб.</p>
+                            <p class="products__old-price"><strike>6 260 руб.</strike></p>
+                            <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
                         </div>
                     </li>
-                    <li class="products__item  product-card">
-                      <div class="products__sale product-card__flag">
-                          <p>- 30%</p>
-                      </div>
+                    <li class="products__item product-card">
                       <div class="products__fav">
-                          <a href="#" class="add-fav" data-turbolinks="false">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
                               <svg width="24" height="22">
                               <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
                               </svg>
                           </a>
-                          <a href="" class="products__basket"></a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
                       </div>
                       <a href="product.html" class="products__img product-card__img">
                         <img src="../img/item.png" alt="product">
                         <img src="../img/b1.png" alt="product" class="product-card__hide">
                       </a>
                       <a class="product-card__fast products__cart-fast" href="product.html">Быстрый просмотр</a>
-                      <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
-                      <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
+                      <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                      <p class="product-card__name">Сумка через плечо</p>
                       <div class="product-card__prices">
-                          <p class="products__old-price"><strike>6 260 руб.</strike></p>
-                          <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
+                        <p class="product-card__price">6 260 руб.</p>
                       </div>
                   </li>
-                  <li class="products__item product-card">
-                    <div class="products__fav">
-                        <a href="#" class="add-fav products__heart" data-turbolinks="false">
-                            <svg width="24" height="22">
-                            <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="products__basket"><span>Корзина</span>
-                          <svg width="14" height="14">
-                            <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
-                          </svg>
-                        </a>
-                    </div>
-                    <a href="product.html" class="products__img product-card__img">
-                      <img src="../img/item.png" alt="product">
-                      <img src="../img/b1.png" alt="product" class="product-card__hide">
-                    </a>
-                    <a class="product-card__fast products__cart-fast" href="product.html">Быстрый просмотр</a>
-                    <a href="product.html" class="product-card__brand">Fabio Bruno</a>
-                    <p class="product-card__name">Сумка через плечо</p>
-                    <div class="product-card__prices">
-                      <p class="product-card__price">6 260 руб.</p>
-                    </div>
-                </li>
-                    </ul>
-                </div>
-                <a href="" class="products__move-top button"><span>Вверх</span></a>
-            </section>
+                      </ul>
+                  </div>
+                  <a href="" class="products__move-top button"><span>Вверх</span></a>
+              </section>
+            </div>
         </main>
         @@include('../blocks/footer/footer.html')
     </body>
