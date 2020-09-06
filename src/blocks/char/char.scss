@@ -1,0 +1,29 @@
+.char__title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.char__list {
+  @include list-reset;
+}
+
+.char__row {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.char__item {
+  font-size: 14px;
+  line-height: 17px;
+
+  span {
+    color: #A2A2A2;
+  }
+}
+
+.char__header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
