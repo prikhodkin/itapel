@@ -105,6 +105,10 @@
   text-decoration: line-through;
 }
 
+.product-card__top {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .product-card__prices {
     font-size: 16px;
@@ -129,6 +133,35 @@
   .product-card {
     &:hover {
       border-color: #2d2d2d;
+
+      .product-card__top {
+        opacity: 1;
+      }
     }
+  }
+
+  .product-card__flag {
+    z-index: 10;
+  }
+
+  .product-card__top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .product-card__add {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    appearance: none;
   }
 }
