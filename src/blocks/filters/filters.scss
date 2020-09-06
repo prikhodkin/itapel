@@ -1,0 +1,142 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.filters__list {
+  position: absolute;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  max-width: 500px;
+  left: 0;
+  padding: 20px 30px;
+}
+
+.filters__main-title {
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../../../img/dropdown__arrow--black.png");
+    transition: all 0.3s;
+  }
+}
+
+.filters__item {
+  padding: 5px;
+
+  p {
+    font-size: 14px;
+  }
+
+  label {
+    display: flex;
+  }
+}
+
+.filters__point {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 10px 0 20px 0;
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../../../img/dropdown__arrow--black.png");
+    transition: all 0.3s;
+}
+}
+
+.filters__category {
+  ul {
+    padding: 15px 20px;
+  }
+}
+
+.filters__sizes,
+.filters__color-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .filters__item {
+    width: 30%;
+  }
+}
+
+.filters__check {
+  border-radius: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &::before {
+    content: none;
+  }
+}
+
+.filters__color {
+
+  &--red {
+    background-color: red;
+  }
+
+  &--blue {
+    background-color: blue;
+  }
+
+  &--orange {
+    background-color: orange;
+  }
+
+  &--green {
+    background-color: green;
+  }
+
+  &--yellow {
+    background-color: yellow;
+  }
+
+  &--white {
+    background-color: white;
+  }
+}
+
+.filters__checkbox {
+
+  &:focus {
+    & ~ .filters__check {
+      border: 1 px solid rgba(0, 0 , 0, 0.5);
+    }
+  }
+
+  &:checked {
+    & ~ .filters__check {
+      border: 2px solid black;
+    }
+  }
+}
