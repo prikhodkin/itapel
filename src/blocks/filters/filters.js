@@ -1,6 +1,9 @@
-import JQ from "jqeury"
-import {ion} from "ion-rangeslider/src/ion-rangeslider";
+import JQ from "jquery";
+import {ion} from "ion-rangeslider";
 
+const init = () => {
+  JQ(".js-range-slider").ionRangeSlider();
+  console.log('hello');
+}
 
-JQ(".js-range-slider").ion()
-JQ(".js-range-slider").ionRangeSlider();
+export default init;
