@@ -1,10 +1,12 @@
 import {$, fadeIn, fadeOut, listen} from "../../js/util";
 
 const openDropdown = (event, item) => {
-    // event.preventDefault();
     const target = event.target.closest(`[data-dropdown-trigger]`);
     const list = $(`[data-dropdown-list]`, item);
-    console.log(item)
+
+    if (target.tagName === 'A') {
+      event.preventDefault();
+    }
 
     if(!target) {
       return;

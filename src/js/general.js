@@ -7,6 +7,7 @@ import openDropdown from "%modules%/dropdown/dropdown";
 import {Popup} from "%modules%/popup/popup";
 import showInput from "%modules%/organization/organization";
 import range from "%modules%/filters/filters";
+import fixedMenu from "%modules%/fixed/fixed";
 import {init as addAdress, removeItem }  from "%modules%/personal/personal";
 const promoList = document.querySelector(`.promo__list`);
 const cards = document.querySelectorAll(`.card__inner`);
@@ -35,6 +36,7 @@ if(promoList) {
   promoSlider();
 }
 
+fixedMenu();
 range();
 showInput();
 addAdress();
