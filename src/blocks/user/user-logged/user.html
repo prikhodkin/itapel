@@ -1,8 +1,12 @@
 <section class="user">
-  <ul class="user__list user__list--logged">
+  <ul class="user__list user__list--logged list-style">
     <li class="user__point user__point--enter">
-      <a href="" class="user__link user__link--enter">Вход</a>
-      <ul class="user__info">
+      <a href="#" class="user__link user__link--enter" data-turbolinks="false"><span>Вход</span>
+        <svg width="14" height="14">
+          <use xlink:href="img/sprites/sprite.svg#icon__logged"></use>
+        </svg>
+      </a>
+      <ul class="user__info list-style">
         <li>
           <a href="">Личные данные</a>
         </li>
@@ -24,30 +28,48 @@
       </ul>
     </li>
     <li class="user__point">
-      <a href="" class="user__link user__link--favorites">Избранное</a>
+      <a href="#" class="user__link user__link--fav" data-turbolinks="false"><span>Избранное</span>
+        <svg width="16" height="16">
+          <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+        </svg>
+    </a>
     </li>
     <li class="user__point user__point--basket">
-      <a href="" class="user__link user__link--basket">Корзина</a>
-      <button class="user__basket-notification" type="button" style="pointer-events: none;">Товары в корзине</button>
-      <div>
+      <button class="user__basket-notification" type="button" style="pointer-events: none;"><span>3</span></button>
+      <a href="" class="user__link user__link--basket"><span>Корзина</span>
+        <svg width="14" height="14">
+          <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+        </svg>
+      </a>
+      <div class="user__basket">
         <ul class="user__basket-menu">
-          <li>
+          <li class="user__basket-item">
+            <div class="user__basket-img" style="background: no-repeat center url('../../../img/basket__preview-img.png');"></div>
             <ul>
-              <li>Fabio bruno</li>
-              <li>Сумка через плечо</li>
-              <li>6 260 руб.</li>
+              <li class="user__product-brand">Fabio bruno</li>
+              <li class="user__product-title">Сумка через плечо</li>
+              <li class="user__product-price">6 260 руб.</li>
             </ul>
           </li>
-          <li>
+          <li class="user__basket-item">
+            <div class="user__basket-img" style="background: no-repeat center url('../../../img/basket__preview-img.png');"></div>
             <ul>
-              <li>Fabio bruno</li>
-              <li>Сумка через плечо</li>
-              <li>6 260 руб.</li>
+              <li class="user__product-brand">Fabio bruno</li>
+              <li class="user__product-title">Сумка через плечо</li>
+              <li class="user__product-price">6 260 руб.</li>
+            </ul>
+          </li>
+          <li class="user__basket-item">
+            <div class="user__basket-img" style="background: no-repeat center url('../../../img/basket__preview-img.png');"></div>
+            <ul>
+              <li class="user__product-brand">Fabio bruno</li>
+              <li class="user__product-title">Сумка через плечо</li>
+              <li class="user__product-price">6 260 руб.</li>
             </ul>
           </li>
         </ul>
-        <p><span>Итого:</span>6 260 руб.</p>
-        <a href="">Перейти в корзину</a>
+        <p class="user__basket-price"><span>Итого: </span>6 260 руб.</p>
+        <a class="button" href="">Перейти в корзину</a>
       </div>
     </li>
   </ul>
