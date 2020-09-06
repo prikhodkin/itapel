@@ -29,6 +29,12 @@
     color: $main;
     background-color: #ffcc00;
   }
+
+  &--thin {
+    color: $main;
+    background-color: transparent;
+    border: 1px solid $main;
+  }
 }
 
 @media (min-width: 1280px) {
