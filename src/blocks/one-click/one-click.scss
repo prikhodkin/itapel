@@ -1,0 +1,33 @@
+.one-click {
+  padding: 50px 20px;
+  background-color: #ffffff;
+
+  input {
+    margin-bottom: 16px;
+  }
+}
+
+.one-click__button {
+  margin-top: 50px;
+}
+
+.one-click__title {
+  margin-bottom: 42px;
+}
+
+@media (min-width: 1280px) {
+  .one-click {
+    width: 850px;
+    padding: 90px 240px 120px 240px;
+  }
+
+  .one-click__button {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .one-click__title {
+    margin-bottom: 56px;
+  }
+}

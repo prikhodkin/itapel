@@ -161,9 +161,17 @@
 
 @media (min-width: 1280px) {
   .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 1060px;
     margin: 0 auto;
     padding: 80px 80px 100px 80px;
+    background-color: #ffffff;
+  }
+
+  .card__images {
+    width: unset;
   }
 
   .card__sub-list {
