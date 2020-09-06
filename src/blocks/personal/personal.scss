@@ -1,0 +1,168 @@
+
+.personal__title {
+  margin-bottom: 30px;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.personal__fields {
+  label {
+    position: relative;
+    display: block;
+  }
+
+  .input {
+    margin-bottom: 25px;
+  }
+}
+
+.personal__data {
+  margin-bottom: 49px;
+}
+
+.personal__gender {
+  margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.personal__radios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal__addresses {
+  margin-bottom: 70px;
+}
+
+.personal__requisites {
+  margin-bottom: 60px;
+}
+
+.personal__button {
+  width: 235px;
+  margin: 0 auto;
+}
+
+.personal__list {
+  @include list-reset;
+}
+
+.personal__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  p {
+    margin-right: auto;
+  }
+}
+
+.personal__edit {
+  @include pseudo;
+  min-width: 10px;
+  height: 10px;
+  margin-top: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../../img/pencil.png");
+  border: none;
+  cursor: pointer;
+}
+
+.personal__del {
+  @include pseudo;
+  min-width: 10px;
+  height: 10px;
+  margin-top: 3px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../../img/close.png");
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .personal__title {
+    &--hide {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+
+  .personal__top {
+    display: flex;
+  }
+
+  .personal__data {
+    flex-grow: 1;
+    margin-right: 30px;
+    margin-bottom: 84px;
+    padding: 35px 24px 49px 24px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .input {
+      background-color: transparent;
+    }
+  }
+
+  .personal__addresses {
+    margin-bottom: 32px;
+    padding: 40px 50px 50px 50px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .personal__requisites {
+    margin-bottom: 32px;
+    padding: 40px 80px 50px 80px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .personal__button {
+    width: 250px;
+  }
+
+  .personal__catalog {
+    padding: 70px 50px 50px 50px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .personal__title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .personal__title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .personal {
+    width: 844px;
+    margin: 0 auto;
+  }
+
+  .personal__radios {
+    width: 256px;
+    margin: 0 auto;
+  }
+
+  .personal__data {
+    min-width: 400px;
+  }
+}

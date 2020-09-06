@@ -19,3 +19,20 @@
     color: #a2a2a2;
   }
 }
+
+.input__edit {
+  @include pseudo;
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  z-index: 10;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../../img/pencil.png");
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+  appearance: none;
+}
