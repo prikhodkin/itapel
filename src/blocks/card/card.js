@@ -1,12 +1,14 @@
 import {tns} from "tiny-slider/src/tiny-slider";
 
-const initSlider = () => {
+const initSlider = (target) => {
+  const slider = target.querySelector(`.card__list`);
+  const nav = target.querySelector(`.card__sub-list`);
   tns(
     {
-      "container": ".card__list",
+      "container": slider,
       controls: false,
       slideBy: 'page',
-      "navContainer": ".card__sub-list",
+      "navContainer": nav,
       "navAsThumbnails": true,
       "autoplay": false,
     }

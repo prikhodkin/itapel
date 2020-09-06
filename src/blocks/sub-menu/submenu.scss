@@ -43,13 +43,13 @@
 
   .submenu__wrapper {
     position: relative;
+    position: relative;
+    display: flex;
     display: flex;
     width: 100%;
     margin-top: 50px;
-    background-color: white;
-    position: relative;
-    display: flex;
     padding-bottom: 90px;
+    background-color: white;
     border-top: 1px solid #e0e0e0;
     pointer-events: painted;
   }
@@ -69,27 +69,27 @@
   }
 
   .submenu__column-title {
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 14px;
-    margin-bottom: 20px;
     text-transform: uppercase;
   }
 
   .submenu__image {
+    box-sizing: content-box;
     width: 437px;
     height: 305px;
     padding-top: 30px;
-    box-sizing: content-box;
   }
 
   .submenu__recommend {
-    opacity: 0;
     position: absolute;
+    top: 20px;
     right: 0;
     width: 437px;
     height: 305px;
-    top: 20px;
     font-size: 14px;
+    opacity: 0;
   }
 
   .submenu__inner-list {
@@ -120,8 +120,8 @@
   }
 
   .submenu__reccomend-text {
-    color:#C4C4C4;
     padding: 8px 0;
+    color: #c4c4c4;
   }
 
   .submenu__reccomend-title {
