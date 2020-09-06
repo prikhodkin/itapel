@@ -41,26 +41,26 @@
 
   &--back {
     position: absolute;
-    left: 40px;
     top: 0;
-    color: black;
+    left: 40px;
     font-weight: 500;
+    color: black;
 
     span {
       display: none;
-    };
+    }
 
     &::before {
       @include pseudo;
       position: absolute;
-      width: 10px;
-      height: 10px;
-      background-image: url("../../../img/dropdown__arrow--black.png");
-      transition: all 0.3s;
       position: absolute;
       top: 5px;
       left: -20px;
+      width: 10px;
+      height: 10px;
+      background-image: url("../../../img/dropdown__arrow--black.png");
       transform: rotate(90deg);
+      transition: all 0.3s;
     }
   }
 }
@@ -75,10 +75,10 @@
   .breadcrumbs__link {
     &--back {
       position: absolute;
-      left: 0;
       top: 0;
-      color:#A2A2A2;
+      left: 0;
       font-weight: normal;
+      color: #a2a2a2;
 
       span {
         display: inline-block;

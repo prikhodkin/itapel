@@ -147,23 +147,24 @@
   .js-input-to {
     width: 80%;
     padding: 10px;
-    border-radius: 10px;
     border-width: 1px;
+    border-radius: 10px;
   }
 
 
   label {
     display: flex;
     justify-content: space-between;
-    width: 48%;
     align-items: center;
+    width: 48%;
   }
 }
 
 .range-slider {
   padding: 10px 0;
+
   .irs-handle {
-    background-color: black!important;
+    background-color: black !important;
     border-radius: 50%;
   }
 

@@ -11,153 +11,151 @@
 </head>
 <body class="page">
   @@include('../blocks/header/header.html')
-  <main class="basket page__main">
+  <main class= page__main">
     <a href="" class="basket__back-link">Назад к покупкам</a>
-    <h1 class="basket__title">Корзина</h1>
-    <section class="basket__wrapper">
-      <ul class="basket__list">
-        <li class="basket__item">
-          <a href="" class="basket__item-del"> Убрать из корзины</a>
-          <a href="" class="basket__add-like">Переместить в избранное</a>
-          <ul>
-            <li class="basket__item-img">
-              <img src="#" alt="">
-            </li>
-            <li>
-              <h4 class="basket__item-title">Fabio Bruno</h4>
-              <p class="basket__text-gray">Сумка через плечо</p>
-              <p class="basket__text-gray">Артикул: 111222333</p>
-            </li>
-            <li>
-              <p class="basket__text-gray">Цвет: <span class="basket__text-gray--bold">Черный</span></p>
-              <p class="basket__text-gray">Размер: <span class="basket__text-gray--bold">25</span></p>
-              <div>
-                <p class="basket__text-gray">Количество:</p>
-                <input type="number" value="1" min="1">
+    <section class="basket">
+      <h1 class="basket__title title">Корзина</h1>
+      <div class="basket__wrapper">
+        <div class="basket__left">
+          <ul class="basket__list">
+            <li class="basket__item">
+              <a href="product.html" class="basket__img">
+                <img src="../img/item.png" alt="">
+              </a>
+              <div class="basket__body">
+                <div class="basket__info">
+                  <a href="product.html" class="basket__name">FABIO BRUNO</a>
+                  <p class="basket__grey basket__desc">Сумка через плечо </p>
+                  <p class="basket__grey basket__article">Артикул: 111222333</p>
+                </div>
+                <div class="basket__options">
+                  <p class="basket__row basket__color"><span>Цвет: </span>Черный</p>
+                  <p class="basket__row basket__size"><span>Размер: </span>25</p>
+                  <div class="basket__row basket__ctrl">
+                    <span>Количество: </span>
+                    <div class="basket__counter">
+                      <button class="basket__control basket__control--min">-</button>
+                      <input type="number" class="basket__input" value="1">
+                      <button class="basket__control basket__control--max">+</button>
+                    </div>
+                  </div>
+                </div>
+                <p class="basket__price">6 260 руб.</p>
               </div>
+              <button class="basket__del"></button>
+              <a href="#" class="add-fav basket__fav" data-turbolinks="false">
+                <span>Переместить в избранное</span>
+                <svg width="24" height="22">
+                  <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <p class="basket__text-gray--bold">6 260 руб.</p>
+            <li class="basket__item">
+              <a href="product.html" class="basket__img">
+                <img src="../img/item.png" alt="">
+              </a>
+              <div class="basket__body">
+                <div class="basket__info">
+                  <a href="product.html" class="basket__name">FABIO BRUNO</a>
+                  <p class="basket__grey basket__desc">Сумка через плечо </p>
+                  <p class="basket__grey basket__article">Артикул: 111222333</p>
+                </div>
+                <div class="basket__options">
+                  <p class="basket__row basket__color"><span>Цвет: </span>Черный</p>
+                  <p class="basket__row basket__size"><span>Размер: </span>25</p>
+                  <div class="basket__row basket__ctrl">
+                    <span>Количество: </span>
+                    <div class="basket__counter">
+                      <button class="basket__control basket__control--min">-</button>
+                      <input type="number" class="basket__input" value="1">
+                      <button class="basket__control basket__control--max">+</button>
+                    </div>
+                  </div>
+                </div>
+                <p class="basket__price">6 260 руб.</p>
+              </div>
+              <button class="basket__del"></button>
+              <a href="#" class="add-fav basket__fav" data-turbolinks="false">
+                <span>Переместить в избранное</span>
+                <svg width="24" height="22">
+                  <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </li>
-        <li class="basket__item">
-          <a href="" class="basket__item-del"> Убрать из корзины</a>
-          <a href="" class="basket__add-like">Переместить в избранное</a>
-          <ul>
-            <li class="basket__item-img">
-              <img src="#" alt="">
-            </li>
-            <li>
-              <h4 class="basket__item-title">Fabio Bruno</h4>
-              <p class="basket__text-gray">Сумка через плечо</p>
-              <p class="basket__text-gray">Артикул: 111222333</p>
-            </li>
-            <li>
-              <p class="basket__text-gray">Цвет: <span class="basket__text-gray--bold">Черный</span></p>
-              <p class="basket__text-gray">Размер: <span class="basket__text-gray--bold">25</span></p>
-              <div>
-                <p class="basket__text-gray">Количество:</p>
-                <input type="number" value="1" min="1">
+          <form class="order-form">
+            <div class="order-form__item">
+              <h2 class="order-form__title title">СПОСОБ ДОСТАВКИ</h2>
+              <div class="order-form__row">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="delivery" value="Мужской" checked>
+                  <span class="radio__circle"></span>
+                  <p>Пункт выдачи</p>
+                </label>
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="delivery" value="Мужской">
+                  <span class="radio__circle"></span>
+                  <p>Доставка курьером</p>
+                </label>
               </div>
-            </li>
-            <li>
-              <p class="basket__text-gray--bold">6 260 руб.</p>
-            </li>
-          </ul>
-        </li>
-        <li class="basket__item">
-          <a href="" class="basket__item-del"> Убрать из корзины</a>
-          <a href="" class="basket__add-like">Переместить в избранное</a>
-          <ul>
-            <li class="basket__item-img">
-              <img src="#" alt="">
-            </li>
-            <li>
-              <h4 class="basket__item-title">Fabio Bruno</h4>
-              <p class="basket__text-gray">Сумка через плечо</p>
-              <p class="basket__text-gray">Артикул: 111222333</p>
-            </li>
-            <li>
-              <p class="basket__text-gray">Цвет: <span class="basket__text-gray--bold">Черный</span></p>
-              <p class="basket__text-gray">Размер: <span class="basket__text-gray--bold">25</span></p>
-              <div>
-                <p class="basket__text-gray">Количество:</p>
-                <input type="number" value="1" min="1">
+              <p class="order-form__adress">г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</p>
+              <p class="order-form__text"><span>Часы работы:</span> Ежедневно 10:00-21:00</p>
+              <p class="order-form__text order-form__text--price"><span>Стоимость доставки:</span> бесплатно</p>
+              <p class="order-form__text order-form__text--date"><span>Доставка:</span> 27-29 июля</p>
+              <button class="button button--thin">Выбрать другой</button>
+            </div>
+            <div class="order-form__item">
+              <h2 class="order-form__title title">СПОСОБ ОПЛАТЫ</h2>
+              <div class="order-form__row">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="pay" value="Мужской" checked>
+                  <span class="radio__circle"></span>
+                  <p>Картой</p>
+                </label>
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="pay" value="Мужской">
+                  <span class="radio__circle"></span>
+                  <p>QR-код</p>
+                </label>
               </div>
-            </li>
-            <li>
-              <p class="basket__text-gray--bold">6 260 руб.</p>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="basket__pay">
-        <h4>Итого: 6 260 руб.</h4>
-        <p class="basket__text-gray">Товары: <span class="basket__text-gray--bold">6 000 руб.</span></p>
-        <p class="basket__text-gray">Стоимость доставки: <span class="basket__text-gray--bold">260 руб.</span></p>
-        <p class="basket__text-gray">Доставка: <span class="basket__text-gray--bold">Пункт выдачи</span></p>
-        <p class="basket__text-gray">Ежедневно 10:00-21:00 г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</p>
-        <p class="basket__text-gray">Дата: <span class="basket__text-gray--bold">27-29 июля</span></p>
-        <p class="basket__text-gray">Оплата: <span class="basket__text-gray--bold">Онлайн</span></p>
-        <button class="button" form="order-form" type="submit">Оплатить заказ</button>
+             <p class="order-form__small">Для получения заказа необходимо назвать код, который отобразится в разделе «Покупки» после оформления заказа</p>
+              <img src="../img/plat.png" alt="" class="order-form__icons">
+            </div>
+            <div class="order-form__item">
+              <h2 class="order-form__title title">ВАШИ ДАННЫЕ</h2>
+              <input class="input" type="text" placeholder="Имя*">
+              <input class="input" type="text" placeholder="Фамилия*">
+              <input class="input" type="tel" placeholder="Контактный телефон*">
+              <input class="input" type="email" placeholder="Электронная почта">
+              <div class="order-form__bottom">
+                <label class="radio">
+                  <input class="radio__input" type="checkbox"  checked>
+                  <span class="radio__circle"></span>
+                  <p>Я соглашаюсь с условиями <a href=""> Публичной оферты</a></p>
+                </label>
+                <label class="radio">
+                  <input class="radio__input" type="checkbox"  checked>
+                  <span class="radio__circle"></span>
+                  <p>Получать эксклюзивные скидки от itapel.ru по SMS</p>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="basket__pay">
+          <h4 class="basket__result">Итого: 6 260 руб.</h4>
+          <p class="basket__row"><span>Товары: </span> 6 000 руб.</p>
+          <p class="basket__row basket__delivery"><span>Стоимость доставки:</span> 260 руб.</p>
+          <p class="basket__row"><span>Доставка:</span>  Пункт выдачи</span></p>
+          <p class="basket__row basket__adress"><span>Ежедневно 10:00-21:00 г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</span> </p>
+          <p class="basket__row"><span>Дата:</span>  27-29 июля</span></p>
+          <p class="basket__row"><span>Оплата:</span> Онлайн</p>
+          <button class="button" form="order-form" type="submit">Оплатить заказ</button>
+        </div>
       </div>
     </section>
 
-    <form action="" id="order-form" class="basket__order">
-        <div class="basket__form-section">
-            <h3>Способ доставки</h3>
-            <div>
-                <label>
-                    <input type="radio" name="delivery" checked>
-                    <p>Пункт выдачи</p>
-                </label>
-                <label>
-                    <input type="radio" name="delivery">
-                    <p>Доставка курьером</p>
-                </label>
-            </div>
-            <div class="basket__pickup">
-                <strong>г. Екатеринбург (Свердловская область), улица Красных Партизан, д. 1</strong>
-                <p class="basket__text-gray">Часы работы: <span class="basket__text-gray--bold">Ежедневно 10:00-21:00</span></p>
-                <p class="basket__text-gray">Стоимость доставки: <span class="basket__text-gray--bold">бесплатно</span></p>
-                <p class="basket__text-gray">Доставка: <span class="basket__text-gray--bold">27-29 июля</span></p>
-            </div>
-            <a href="" class="basket__change-pickup">Выбрать другой</a>
-        </div>
-        <div class="basket__form-section">
-            <h3>Способ оплаты</h3>
-            <div>
-                <label>
-                    <input type="radio" name="payment" value="картой" checked>
-                    <p>Картой</p>
-                </label>
-                <label>
-                    <input type="radio" name="payment" value="qr">
-                    <p>QR-код</p>
-                </label>
-            </div>
-            <p>Для получения заказа необходимо назвать код, который отобразится в разделе «Покупки» после оформления заказа</p>
-            <img src="#" alt="">
-        </div>
-        <div class="basket__form-section">
-            <h3>Ваши данные</h3>
-            <div>
-                <input type="text" placeholder="Имя*" required>
-                <input type="text" placeholder="Фамилия*" required>
-                <input type="tel" placeholder="Контактный телефон*" required>
-                <input type="email" placeholder="Электронная почта">
-            </div>
-            <label>
-                <input type="checkbox" checked>
-                <p>Я соглашаюсь с условиями <a href="">Публичной оферты</a></p>
-            </label>
-            <label>
-                <input type="checkbox" checked>
-                <p>Получать эксклюзивные скидки от itapel.ru по SMS</p>
-            </label>
-        </div>
-    </form>
   </main>
   @@include('../blocks/footer/footer.html')
 </body>

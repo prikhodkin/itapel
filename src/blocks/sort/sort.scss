@@ -49,9 +49,11 @@
   .sort {
     position: absolute;
     right: 650px;
+
     p {
       font-size: 16px;
     }
+
     .radio__circle {
       display: none;
     }
@@ -62,8 +64,8 @@
   }
 
   .sort__list-wrap {
-    width: 620px;
     align-items: center;
+    width: 620px;
     padding: 0;
   }
 
