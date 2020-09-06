@@ -2,6 +2,16 @@
   padding: 20px 20px;
 }
 
+.header {
+  width: 100%;
+}
+
+.header {
+  background-color: white;
+  position: fixed;
+  z-index: 21;
+}
+
 .header__top-row {
   display: flex;
   padding: 8px 0;

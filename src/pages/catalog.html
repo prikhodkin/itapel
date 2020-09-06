@@ -27,11 +27,12 @@
 
             <div class="catalog__wrapper">
 
-              <section class="filters">
+              <section class="filters__fixed fixed-div">
+                <div class="filters">
                 <div data-dropdown>
                   <p class="filters__main-title" data-dropdown-trigger>Фильтры</p>
                   <ul class="filters__list list-style hidden dropdown__list" data-dropdown-list>
-                      <li class="filters__category" filter-dropdown>
+                      <li class="filters__category" data-dropdown>
                               <p class="filters__point"  data-dropdown-trigger>Категория</p>
                           <ul class="list-style hidden dropdown__list" data-dropdown-list>
                               <li class="filters__item">
@@ -120,7 +121,7 @@
                               </li>
                           </ul>
                       </li>
-                      <li class="filters__category" filter-dropdown>
+                      <li class="filters__category" data-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Цена</p>
                           <div class="filters__price hidden dropdown__list" data-dropdown-list>
                             <div class="extra-controls filters__extra">
@@ -139,7 +140,7 @@
                           </div>
 
                       </li>
-                      <li class="filters__category" filter-dropdown>
+                      <li class="filters__category" data-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Бренд</p>
                           <ul class="list-style hidden dropdown__list" data-dropdown-list>
                               <li class="filters__item">
@@ -159,7 +160,7 @@
                           </ul>
                       </li>
                       <!-- C размерами разобраться -->
-                      <li class="filters__category" filter-dropdown>
+                      <li class="filters__category" data-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Размер</p>
                               <div class="hidden dropdown__list" data-dropdown-list="">
                                 <ul class="list-style filters__sizes">
@@ -208,7 +209,7 @@
                                 </ul>
                             </div>
                       </li>
-                      <li class="filters__category" filter-dropdown>
+                      <li class="filters__category" data-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Цвет</p>
                               <div class="hidden dropdown__list" data-dropdown-list>
                                 <ul class="list-style filters__color-list">
@@ -257,7 +258,7 @@
                           </ul>
                         </div>
                       </li>
-                      <li class="filters__category" filter-dropdown>
+                      <li class="filters__category" data-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Материал</p>
                           <ul class="list-style hidden dropdown__list" data-dropdown-list>
                               <li class="filters__item">
@@ -323,6 +324,7 @@
                       </ul>
                     </div>
                 </div>
+              </div>
               </section>
               <section class="products">
 
@@ -489,5 +491,6 @@
             </div>
         </main>
         @@include('../blocks/footer/footer.html')
+        @@include('../blocks/overlay/overlay.html')
     </body>
 </html>

@@ -1,5 +1,10 @@
-.submenu {
+.submenu,
+.submenu__overlay {
   display: none;
+}
+
+.submenu__wrapper {
+  display: flex;
 }
 
 .submenu__inner-list {
@@ -32,20 +37,16 @@
 
 @media (min-width: 1280px) {
   .submenu {
-    @include page-wrapper;
     position: fixed;
     top: 175px;
     left: 0;
     z-index: 500;
     width: 100%;
-    background-color: transparent;
   }
 
   .submenu__wrapper {
+    @include page-wrapper;
     position: relative;
-    position: relative;
-    display: flex;
-    display: flex;
     width: 100%;
     margin-top: 50px;
     padding-bottom: 90px;
@@ -85,7 +86,7 @@
   .submenu__recommend {
     position: absolute;
     top: 20px;
-    right: 0;
+    right: calc(50% - 640px);;
     width: 437px;
     height: 305px;
     font-size: 14px;
@@ -126,5 +127,14 @@
 
   .submenu__reccomend-title {
     font-weight: 500;
+  }
+
+  .submenu__overlay {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    left: 0;
   }
 }

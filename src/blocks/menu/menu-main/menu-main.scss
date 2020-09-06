@@ -23,9 +23,12 @@
 }
 
 @media (min-width: 1280px) {
-  .menu-main__item p:hover + .submenu,
-  .menu-main__item .submenu:hover {
-    display: flex;
+  .menu-main__item a:hover + .submenu,
+  .menu-main__item a:hover ~ .submenu__overlay,
+  .menu-main__item .submenu:hover,
+  .menu-main__item .submenu:hover + .submenu__overlay {
+    font-weight: 500;
+    display: block;
     opacity: 1;
   }
 
@@ -43,6 +46,12 @@
 
     &::after {
       display: none;
+    }
+
+    &:hover {
+      .menu-main__link {
+        font-weight: 500;
+      }
     }
   }
 }
