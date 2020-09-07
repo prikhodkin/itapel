@@ -5,6 +5,11 @@ export const fixedMenu = () => {
 JQ(function(){
   const $fixedBox = JQ('.fixed-box');
   var $nav = JQ('.fixed-div');
+
+  if(!$nav.length){
+    return;
+  }
+
   $fixedBox.height($nav.innerHeight());
 
   var $window = JQ(window);
@@ -29,7 +34,6 @@ export const fixedsearch = () => {
 
     var $window = JQ(window);
     var $h = $fixedBox.offset().top;
-    console.log($h)
     $window.scroll(function(){
       if ($window.scrollTop() > ($h)){
         $nav.addClass('fixed-opacity');

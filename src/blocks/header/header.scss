@@ -73,6 +73,10 @@
   display: none;
   font-size: 12px;
   background: #f5f5f5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 
   &--active {
     position: fixed;
