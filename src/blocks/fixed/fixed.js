@@ -1,6 +1,6 @@
 import JQ from "jquery";
 
-const fixedMenu = () => {
+export const fixedMenu = () => {
 
 JQ(function(){
   const $fixedBox = JQ('.fixed-box');
@@ -9,12 +9,7 @@ JQ(function(){
 
   var $window = JQ(window);
 
-  $window.resize(function(){
-    console.log($window.width())
-    // $nav.css('width', $nav.outerWidth());
-  })
   var $h = $nav.offset().top;
-  console.log($h)
 	$window.scroll(function(){
 		if ($window.scrollTop() > ($h - 90)){
 			$nav.addClass('fixed');
@@ -25,4 +20,26 @@ JQ(function(){
 });
 }
 
-export default fixedMenu;
+export const fixedsearch = () => {
+
+  JQ(function(){
+    const $fixedBox = JQ('.fixed-search');
+    const $btn = JQ(`.header__search-button`);
+    var $nav = JQ('.fixed-search-input');
+
+    var $window = JQ(window);
+    var $h = $fixedBox.offset().top;
+    console.log($h)
+    $window.scroll(function(){
+      if ($window.scrollTop() > ($h)){
+        $nav.addClass('fixed-opacity');
+        JQ($btn).click(function(e){
+          e.preventDefault();
+          $nav.removeClass('fixed-opacity');
+        })
+      } else {
+        $nav.removeClass('fixed-opacity');
+      }
+    });
+  });
+  }

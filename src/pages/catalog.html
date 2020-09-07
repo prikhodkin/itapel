@@ -12,7 +12,7 @@
     <body class="page">
         @@include('../blocks/header/header.html')
         <main class="page__main page-wrapper ">
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--fixed">
                 <ul class="breadcrumbs__list list-style">
                     <li>
                         <a class="breadcrumbs__link" href="">Главная</a>
@@ -28,10 +28,11 @@
             <div class="catalog__wrapper">
 
               <section class="filters__fixed fixed-div">
+                <div class="filter__fixed-box">
                 <div class="filters">
                 <div data-dropdown>
                   <p class="filters__main-title" data-dropdown-trigger>Фильтры</p>
-                  <ul class="filters__list list-style hidden dropdown__list" data-dropdown-list>
+                  <ul class="list-style dropdown__list filters__list hidden" data-dropdown-list>
                       <li class="filters__category" data-dropdown>
                               <p class="filters__point"  data-dropdown-trigger>Категория</p>
                           <ul class="list-style hidden dropdown__list" data-dropdown-list>
@@ -325,6 +326,7 @@
                     </div>
                 </div>
               </div>
+            </div>
               </section>
               <section class="products">
 
@@ -380,7 +382,7 @@
                               <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
                               <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
                               <div class="product-card__prices">
-                                  <p class="products__old-price"><strike>6 260 руб.</strike></p>
+                                  <p class="product-card__old-price">6 260 руб.</p>
                                   <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
                               </div>
                           </li>
@@ -456,7 +458,7 @@
                         <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
                         <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
                         <div class="product-card__prices">
-                            <p class="products__old-price"><strike>6 260 руб.</strike></p>
+                            <p class="product-card__old-price">6 260 руб.</p>
                             <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
                         </div>
                     </li>

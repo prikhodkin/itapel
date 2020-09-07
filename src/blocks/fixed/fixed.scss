@@ -4,6 +4,17 @@
 	top: 90px;
 }
 
-.fixed-div {
-  width: 100%;
+// .fixed-div {
+//   width: 100%;
+// }
+
+.fixed-opacity {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+@media (min-width: 1280px) {
+  .fixed-div {
+    width: auto;
+  }
 }

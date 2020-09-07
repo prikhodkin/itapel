@@ -6,9 +6,12 @@
 }
 
 .filters__fixed {
-  background-color: white;
+  background-color: #F5F5F5;
   padding: 20px 0;
   margin: -20px auto;
+  z-index: 31;
+  position: relative;
+  width: 100%;
 }
 
 .filters__list {
@@ -18,7 +21,7 @@
   width: 100%;
   max-width: 500px;
   padding: 20px 30px;
-  background: white;
+  background-color: #F5F5F5;
 }
 
 .filters__main-title {
@@ -55,7 +58,6 @@
   padding: 10px 0 20px 0;
   font-weight: 500;
   font-size: 16px;
-  border-bottom: 1px solid #c4c4c4;
 
   &::after {
     @include pseudo;
@@ -72,7 +74,13 @@
 .filters__category {
   ul {
     padding: 15px 20px;
+    border-top: 1px solid #c4c4c4;
   }
+}
+
+.filters__price {
+  border-top: 1px solid #c4c4c4;
+  padding: 20px 0 0 0;
 }
 
 .filters__sizes,
@@ -199,5 +207,17 @@
   .filters__category .dropdown__list,
   .filters__price {
     display: none;
+  }
+
+  .filters__fixed {
+    position: unset;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .filter__fixed-box {
+    width: 340px;
+    top: 197px;
+    position: sticky;
   }
 }
