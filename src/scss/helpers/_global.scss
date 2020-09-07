@@ -4,6 +4,7 @@ body {
   line-height: 17px;
   font-family: $first-font, sans-serif;
   color: #000000;
+  background-color: #F5F5F5;
 }
 
 img {
@@ -78,9 +79,5 @@ input[type=number] {
 
   h1 {
     font-size: 18;
-  }
-
-  body {
-    background-color: #F5F5F5;
   }
 }

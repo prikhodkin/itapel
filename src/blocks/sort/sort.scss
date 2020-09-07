@@ -1,11 +1,11 @@
 .sort__list-wrap {
   position: absolute;
   left: 0;
-  z-index: 6;
+  z-index: 7;
   display: none;
   width: 100%;
   padding: 30px 20px;
-  background: white;
+  background-color: #F5F5F5;
 }
 
 .sort__main-title {
@@ -48,7 +48,7 @@
 @media (min-width: 1280px) {
   .sort {
     position: absolute;
-    right: 650px;
+    right: 0;
 
     p {
       font-size: 16px;
@@ -65,8 +65,12 @@
 
   .sort__list-wrap {
     align-items: center;
-    width: 620px;
+    width: 940px;
     padding: 0;
+  }
+
+  .sort__title {
+    margin: 0 20px 0 auto;
   }
 
   .sort__list {

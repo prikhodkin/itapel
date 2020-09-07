@@ -7,8 +7,11 @@ import openDropdown from "%modules%/dropdown/dropdown";
 import {Popup} from "%modules%/popup/popup";
 import showInput from "%modules%/organization/organization";
 import range from "%modules%/filters/filters";
-import fixedMenu from "%modules%/fixed/fixed";
+import {fixedMenu, fixedsearch} from "%modules%/fixed/fixed";
 import {init as addAdress, removeItem }  from "%modules%/personal/personal";
+import {openMenu} from "%modules%/sub-menu/submenu";
+import {openSearch} from "%modules%/header/header";
+import {scrollTop} from "%modules%/products/products";
 const promoList = document.querySelector(`.promo__list`);
 const cards = document.querySelectorAll(`.card__inner`);
 const tab = document.querySelectorAll(`.tabs`);
@@ -36,15 +39,25 @@ if(promoList) {
   promoSlider();
 }
 
-fixedMenu();
 range();
 showInput();
 addAdress();
+scrollTop();
 
 listen(`click`, `.add-fav`, addFavorite)
 listen(`click`, `[filter-dropdown]`, openDropdown);
 listen(`click`, `.personal__del`, removeItem)
 
 if(window.matchMedia("(max-width: 767px)").matches) {
+  listen(`click`, `[data-dropdown]`, openDropdown);
+  fixedMenu();
+}
+
+if(window.matchMedia("(max-width: 1280px)").matches) {
+  openMenu();
+  openSearch();
+}
+if(window.matchMedia("(min-width: 767px)").matches) {
+  fixedsearch();
   listen(`click`, `[data-dropdown]`, openDropdown);
 }

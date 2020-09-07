@@ -38,7 +38,7 @@
 @media (min-width: 1280px) {
   .submenu {
     position: fixed;
-    top: 175px;
+    top: 153px;
     left: 0;
     z-index: 500;
     width: 100%;
@@ -48,16 +48,16 @@
     @include page-wrapper;
     position: relative;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-bottom: 90px;
-    background-color: white;
+    background-color: #f5f5f5;
     border-top: 1px solid #e0e0e0;
     pointer-events: painted;
   }
 
   .submenu__list {
     display: flex;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .submenu__column {

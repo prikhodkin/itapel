@@ -12,7 +12,9 @@
   <body class="page">
     @@include('../blocks/header/header.html')
     <main class="page__main">
-      <a href="" class="basket__back-link">Назад к покупкам</a>
+      <section class="breadcrumbs">
+        <a href="" class="basket__back-link breadcrumbs__link breadcrumbs__link--back">Назад к покупкам</a>
+      </section>
       <section class="profile">
         <h1 class="profile__title title">Личный профиль</h1>
         <div class="profile__nav user-profile">
@@ -64,5 +66,6 @@
       </section>
     </main>
     @@include('../blocks/footer/footer.html')
+    @@include('../blocks/overlay/overlay.html')
   </body>
 </html>

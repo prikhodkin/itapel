@@ -73,12 +73,17 @@
 @media (min-width: 1280px) {
   .products {
     margin-top: 80px;
+    padding: 20px 0;
   }
 
   .products__item:hover > .products__fav {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+  }
+
+  .products__cart-fast {
+    display: flex;
   }
 
   .products__move-top {

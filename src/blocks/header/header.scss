@@ -3,13 +3,10 @@
 }
 
 .header {
-  width: 100%;
-}
-
-.header {
-  background-color: white;
+  background-color: #f5f5f5;
   position: fixed;
-  z-index: 21;
+  z-index: 101;
+  width: 100%;
 }
 
 .header__top-row {
@@ -45,7 +42,12 @@
   justify-content: space-between;
 
   &--menu {
+    padding: 20px 0 0 0;
     display: none;
+  }
+
+  &--open {
+    display: flex;
   }
 
   &--active {
@@ -70,6 +72,7 @@
 .header__search-input {
   display: none;
   font-size: 12px;
+  background: #f5f5f5;
 
   &--active {
     position: fixed;
@@ -80,6 +83,16 @@
     width: 100%;
     padding: 15px;
     padding-left: 20px;
+    border: none;
+  }
+
+  &--open {
+    display: block;
+    position: absolute;
+    bottom: -33px;
+    width: 100%;
+    padding: 20px;
+    left: 0;
     border: none;
   }
 }
@@ -125,7 +138,7 @@
 
     &--menu {
       display: block;
-      padding: 50px 0;
+      padding: 30px 0 20px 0;
     }
   }
 
