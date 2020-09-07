@@ -132,13 +132,13 @@
   background-color: #ffcc00;
   border: none;
   border-radius: 50%;
-
-  span {
-    position: absolute;
-    top: 0;
-    right: 3px;
-    font-size: 12px;
-  }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user__product-brand {

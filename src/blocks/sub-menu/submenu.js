@@ -4,7 +4,7 @@ export const openMenu = () => {
   const overlay = document.querySelector(`.overlay`);
 
   togglebtn.addEventListener(`click`, (e) => {
-    e.preventDefault;
+    e.preventDefault();
     menu.classList.toggle(`header__sections--open`);
     overlay.classList.toggle(`overlay--open`)
   })
