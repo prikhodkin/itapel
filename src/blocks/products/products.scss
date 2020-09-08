@@ -42,10 +42,13 @@
 .products__fav {
   position: absolute;
   z-index: 10;
-  display: none;
+  opacity: 0;
   justify-content: space-between;
   width: 100%;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
 }
 
 .products__move-top {
@@ -77,9 +80,12 @@
   }
 
   .products__item:hover > .products__fav {
-    display: flex;
-    justify-content: space-between;
+    opacity: 1;
     padding-top: 20px;
+  }
+
+  .products__item:hover > .products__sale {
+    display: none;
   }
 
   .products__cart-fast {
