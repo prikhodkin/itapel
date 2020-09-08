@@ -222,3 +222,88 @@
     </div>
   </div>
 </div>
+
+<div class="popup  popup--map" data-popup="map">
+  <div class="popup__wrapper popup__wrapper--map">
+    <div class="popup__content">
+      <button class="popup__close map-btn">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+      <div class="map">
+        <div class="map__info">
+          <div class="map__radio">
+            <label class="map__label">
+              <input type="radio" name="map-radio" checked>
+              <p class="map__radio-title">Все</p>
+            </label>
+            <label class="map__label">
+              <input type="radio" name="map-radio">
+              <p class="map__radio-title">Пункты выдачи</p>
+            </label>
+            <label class="map__label">
+              <input type="radio" name="map-radio">
+              <p class="map__radio-title">Постоматы</p>
+            </label>
+          </div>
+          <select class="map__city" name="city">
+            <option value="value1" selected>Екатеринбург</option>
+            <option value="value2">Москва</option>
+            <option value="value3">Тюмень</option>
+          </select>
+          <input class="map__search" type="search" placeholder="Поиск по адресам...">
+          <ul class="map__list list-style">
+            <li class="map__item-address">
+              <label class="map__label">
+                <input type="radio" name="map-address" checked>
+                <p class="map__address">г. Екатеринбург (Свердловская область), улица Анатолия Мехренцева, д. 38</p>
+              </label>
+            </li>
+            <li class="map__item-address">
+              <label class="map__label">
+                <input type="radio" name="map-address">
+                <p class="map__address">г. Екатеринбург (Свердловская область), улица Анатолия Мехренцева, д. 38</p>
+              </label>
+            </li>
+            <li class="map__item-address">
+              <label class="map__label">
+                <input type="radio" name="map-address">
+                <p class="map__address">г. Екатеринбург (Свердловская область), улица Анатолия Мехренцева, д. 38</p>
+              </label>
+            </li>
+            <li class="map__item-address">
+              <label class="map__label">
+                <input type="radio" name="map-address">
+                <p class="map__address">г. Екатеринбург (Свердловская область), улица Анатолия Мехренцева, д. 38</p>
+              </label>
+            </li>
+            <li class="map__item-address">
+              <label class="map__label">
+                <input type="radio" name="map-address">
+                <p class="map__address">г. Екатеринбург (Свердловская область), улица Анатолия Мехренцева, д. 38</p>
+              </label>
+            </li>
+            <li class="map__item-address">
+              <label class="map__label">
+                <input type="radio" name="map-address">
+                <p class="map__address">г. Екатеринбург (Свердловская область), улица Анатолия Мехренцева, д. 38</p>
+              </label>
+            </li>
+            <li class="map__item-address">
+              <label class="map__label">
+                <input type="radio" name="map-address">
+                <p class="map__address">г. Екатеринбург (Свердловская область), улица Анатолия Мехренцева, д. 38</p>
+              </label>
+            </li>
+          </ul>
+          <button type="button" class="map__button button">Выбрать</button>
+        </div>
+        <div class="map__map">
+          <div id="map" class="map__loaded"></div>
+          <img src="../../img/map.png" alt="карта" width="630" height="630">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
