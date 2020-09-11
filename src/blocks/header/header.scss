@@ -121,6 +121,12 @@
   }
 }
 
+.header__open {
+  &--close {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .header__top-row {
     justify-content: space-between;
@@ -137,6 +143,10 @@
 }
 
 @media (min-width: 1280px) {
+  .header {
+    position: absolute;
+  }
+
   .header__main {
     @include page-wrapper;
     padding-top: 40px;
@@ -183,6 +193,10 @@
     font-size: 12px;
     border-width: 1px;
     border-radius: 50px;
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
   }
 
   .header__search-button {

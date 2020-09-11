@@ -1,4 +1,4 @@
-<header class="header fixed-search">
+<header class="header">
   <div class="header__top-row">
     <a href="tel:+7 495 615-86-55" class="header__phone"><span>+7 (495) 999 99 99</span> Звонок бесплатный</a>
     <a href="" class="header__mail">info@itapel.ru</a>
@@ -11,12 +11,15 @@
 
       <div class="header__search-wrap">
         <a href="#" class="header__hamb" data-click="header-menu" data-turbolinks="false">
-          <svg width="17" height="12">
-          <use xlink:href="img/sprites/sprite.svg#hamb"></use>
+          <svg class="header__open" width="17" height="12">
+            <use xlink:href="img/sprites/sprite.svg#hamb"></use>
+          </svg>
+          <svg class="header__open header__open--close" width="17" height="12">
+            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
           </svg>
         </a>
         <form action="" class="header__form">
-          <input class="fixed-search-input header__search-input" type="search" name="search" placeholder="Поиск по товарам...">
+          <input class="header__search-input" type="search" name="search" placeholder="Поиск по товарам...">
           <button type="button" class="header__search-button" data-click="header-search"><span>Отправить</span>
             <svg width="13" height="13">
               <use xlink:href="img/sprites/sprite.svg#icon__search"></use>

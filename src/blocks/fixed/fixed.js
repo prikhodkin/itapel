@@ -28,22 +28,44 @@ JQ(function(){
 export const fixedsearch = () => {
 
   JQ(function(){
-    const $fixedBox = JQ('.fixed-search');
-    const $btn = JQ(`.header__search-button`);
-    var $nav = JQ('.fixed-search-input');
+    const $fixedBox = JQ('.header');
+    const $breadcrumbs = JQ('.breadcrumbs--fixed');
+    const $input = JQ('.header__search-input');
+    const $filterBox = JQ('.filter__fixed-box');
+    const $sortBox = JQ('.sort__list-wrap');
+    const overlay = JQ('.overlay');
 
     var $window = JQ(window);
-    var $h = $fixedBox.offset().top;
     $window.scroll(function(){
-      if ($window.scrollTop() > ($h)){
-        $nav.addClass('fixed-opacity');
-        JQ($btn).click(function(e){
-          e.preventDefault();
-          $nav.removeClass('fixed-opacity');
-        })
+      if ($window.scrollTop() > $fixedBox.height()){
+
+        $fixedBox.addClass('fixed-header');
+        $breadcrumbs.addClass('breadcrumbs--fix');
+        $filterBox.addClass('filter__fixed-box--fixed');
+        $sortBox.addClass('sort__list-wrap--fixed');
       } else {
-        $nav.removeClass('fixed-opacity');
+        $fixedBox.removeClass('fixed-header');
+        $input.removeClass('header__search-input--open');
+        $breadcrumbs.removeClass('breadcrumbs--fix');
+        $filterBox.removeClass('filter__fixed-box--fixed');
+        $sortBox.removeClass('sort__list-wrap--fixed');
       }
     });
   });
+  }
+
+  export const openDesctopSearch = () => {
+    const btn = document.querySelector('.header__search-button');
+    const overlay = document.querySelector('.overlay');
+    const input = document.querySelector('.header__search-input');
+
+    btn.addEventListener(`click`, ()=> {
+      const fixedHeader = document.querySelector('.fixed-header');
+
+      if (!fixedHeader) {
+        return;
+      }
+
+      input.classList.toggle('header__search-input--open');
+    })
   }

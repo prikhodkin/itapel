@@ -1,4 +1,5 @@
 import {$, fadeIn, fadeOut, listen} from "../../js/util";
+import { contains } from "jquery";
 
 const openDropdown = (event, item) => {
     const target = event.target.closest(`[data-dropdown-trigger]`);
@@ -9,7 +10,7 @@ const openDropdown = (event, item) => {
       return;
     }
 
-    if (target.tagName === 'A') {
+    if (target.classList.contains('menu-main__link')) {
       event.preventDefault();
     }
 

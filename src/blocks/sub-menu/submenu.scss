@@ -17,18 +17,6 @@
   position: relative;
   min-width: 205px;
   padding: 10px 0;
-
-  &::after {
-    @include pseudo;
-    position: absolute;
-    position: absolute;
-    top: 15px;
-    right: -40px;
-    width: 10px;
-    height: 10px;
-    background-image: url("../../img/dropdown__arrow--black.png");
-    transition: all 0.3s;
-  }
 }
 
 .submenu__recommend {
@@ -37,11 +25,12 @@
 
 @media (min-width: 1280px) {
   .submenu {
-    position: fixed;
+    position: absolute;
     top: 153px;
     left: 0;
     z-index: 500;
     width: 100%;
+    transition: unset;
   }
 
   .submenu__wrapper {
@@ -74,6 +63,7 @@
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
+    display: block;
   }
 
   .submenu__image {
@@ -81,6 +71,12 @@
     width: 437px;
     height: 305px;
     padding-top: 30px;
+    font-size: 14px;
+
+    img {
+      width: auto;
+      max-height: 305px;
+    }
   }
 
   .submenu__recommend {
@@ -110,16 +106,6 @@
     font-size: 14px;
   }
 
-  .submenu__link:hover + .submenu__recommend {
-    display: block;
-    opacity: 1;
-  }
-
-  .submenu__link:hover + .submenu__img {
-    display: block;
-    opacity: 1;
-  }
-
   .submenu__reccomend-text {
     padding: 8px 0;
     color: #c4c4c4;
@@ -130,7 +116,7 @@
   }
 
   .submenu__overlay {
-    height: 50%;
+    height: 70%;
     width: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);

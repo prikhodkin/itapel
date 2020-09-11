@@ -7,7 +7,6 @@ class Popup {
     this.popupClose = this.popup.querySelector('.popup__close');
     this.closer = this.popup.querySelector('.button--close');
 
-
     this.events();
   }
   events() {
@@ -45,6 +44,7 @@ class Popup {
 
   openPopup() {
     let prevPopup = document.querySelector('.popup.opened');
+    const fastPopup = document.querySelector('.popup--fast');
     if(prevPopup) {
       prevPopup.classList.remove('opened');
     }
