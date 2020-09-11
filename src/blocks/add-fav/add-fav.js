@@ -5,5 +5,4 @@ const addFavorite =  (event, target) => {
   target.classList.toggle(`add-fav--active`);
 }
 
-export default addFavorite;
-
+export {addFavorite}

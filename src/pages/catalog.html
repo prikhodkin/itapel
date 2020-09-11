@@ -23,17 +23,17 @@
                 </ul>
             </section>
 
-            <h1 class="page__title">Сумки женские</h1>
+            <h1 class="catalog__title page__title title">Сумки женские</h1>
 
             <div class="catalog__wrapper">
 
               <section class="filters__fixed fixed-div">
                 <div class="filter__fixed-box">
                 <div class="filters">
-                <div data-dropdown>
+                <div filter-dropdown>
                   <p class="filters__main-title" data-dropdown-trigger>Фильтры</p>
                   <ul class="list-style dropdown__list filters__list hidden" data-dropdown-list>
-                      <li class="filters__category" data-dropdown>
+                      <li class="filters__category" filter-dropdown>
                               <p class="filters__point"  data-dropdown-trigger>Категория</p>
                           <ul class="list-style hidden dropdown__list" data-dropdown-list>
                               <li class="filters__item">
@@ -122,7 +122,7 @@
                               </li>
                           </ul>
                       </li>
-                      <li class="filters__category" data-dropdown>
+                      <li class="filters__category" filter-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Цена</p>
                           <div class="filters__price hidden dropdown__list" data-dropdown-list>
                             <div class="extra-controls filters__extra">
@@ -141,7 +141,7 @@
                           </div>
 
                       </li>
-                      <li class="filters__category" data-dropdown>
+                      <li class="filters__category" filter-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Бренд</p>
                           <ul class="list-style hidden dropdown__list" data-dropdown-list>
                               <li class="filters__item">
@@ -161,7 +161,7 @@
                           </ul>
                       </li>
                       <!-- C размерами разобраться -->
-                      <li class="filters__category" data-dropdown>
+                      <li class="filters__category" filter-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Размер</p>
                               <div class="hidden dropdown__list" data-dropdown-list="">
                                 <ul class="list-style filters__sizes">
@@ -210,7 +210,7 @@
                                 </ul>
                             </div>
                       </li>
-                      <li class="filters__category" data-dropdown>
+                      <li class="filters__category" filter-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Цвет</p>
                               <div class="hidden dropdown__list" data-dropdown-list>
                                 <ul class="list-style filters__color-list">
@@ -259,7 +259,7 @@
                           </ul>
                         </div>
                       </li>
-                      <li class="filters__category" data-dropdown>
+                      <li class="filters__category" filter-dropdown>
                               <p class="filters__point" data-dropdown-trigger>Материал</p>
                           <ul class="list-style hidden dropdown__list" data-dropdown-list>
                               <li class="filters__item">
@@ -281,7 +281,7 @@
                   </ul>
                 </div>
 
-                  <div class="sort" data-dropdown>
+                  <div class="sort" filter-dropdown>
                     <p class="sort__main-title" data-dropdown-trigger>Сортировать</p>
                     <div class="sort__list-wrap hidden dropdown__list" data-dropdown-list>
                       <p class="sort__title">Сортировать по:</p>
@@ -331,124 +331,54 @@
               <section class="products">
 
                   <div class="products__wrapper">
-
-
-                      <ul class="products__list list-style">
-                          <li class="products__item product-card">
-                              <div class="products__fav">
-                                  <a href="#" class="add-fav products__heart" data-turbolinks="false">
-                                      <svg width="24" height="22">
-                                      <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                                      </svg>
-                                  </a>
-                                  <a href="" class="products__basket"><span>Корзина</span>
-                                    <svg width="14" height="14">
-                                      <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
-                                    </svg>
-                                  </a>
-                              </div>
-                              <a href="product.html" class="products__img product-card__img">
-                                <img src="../img/item.png" alt="product">
-                                <img src="../img/b1.png" alt="product" class="product-card__hide">
-                              </a>
-                              <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
-                              <a href="product.html" class="product-card__brand">Fabio Bruno</a>
-                              <p class="product-card__name">Сумка через плечо</p>
-                              <div class="product-card__prices">
-                                <p class="product-card__price">6 260 руб.</p>
-                              </div>
-                          </li>
-                          <li class="products__item  product-card">
-                              <div class="products__sale product-card__flag">
-                                  <p>- 30%</p>
-                              </div>
-                              <div class="products__fav">
-                                  <a href="#" class="add-fav" data-turbolinks="false">
-                                      <svg width="24" height="22">
-                                      <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                                      </svg>
-                                  </a>
-                                  <a href="" class="products__basket"><span>Корзина</span>
-                                    <svg width="14" height="14">
-                                      <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
-                                    </svg>
-                                  </a>
-                              </div>
-                              <a href="product.html" class="products__img product-card__img">
-                                <img src="../img/item.png" alt="product">
-                                <img src="../img/b1.png" alt="product" class="product-card__hide">
-                              </a>
-                              <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
-                              <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
-                              <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
-                              <div class="product-card__prices">
-                                  <p class="product-card__old-price">6 260 руб.</p>
-                                  <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
-                              </div>
-                          </li>
-                          <li class="products__item product-card">
-                            <div class="products__fav">
-                                <a href="#" class="add-fav products__heart" data-turbolinks="false">
-                                    <svg width="24" height="22">
-                                    <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                                    </svg>
-                                </a>
-                                <a href="" class="products__basket"><span>Корзина</span>
-                                  <svg width="14" height="14">
-                                    <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
-                                  </svg>
-                                </a>
-                            </div>
-                            <a href="product.html" class="products__img product-card__img">
-                              <img src="../img/item.png" alt="product">
-                              <img src="../img/b1.png" alt="product" class="product-card__hide">
-                            </a>
-                            <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
-                            <a href="product.html" class="product-card__brand">Fabio Bruno</a>
-                            <p class="product-card__name">Сумка через плечо</p>
-                            <div class="product-card__prices">
-                              <p class="product-card__price">6 260 руб.</p>
-                            </div>
-                        </li>
-                        <li class="products__item product-card">
-                          <div class="products__fav">
-                              <a href="#" class="add-fav products__heart" data-turbolinks="false">
-                                  <svg width="24" height="22">
-                                  <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                                  </svg>
-                              </a>
-                              <a href="" class="products__basket"><span>Корзина</span>
-                                <svg width="14" height="14">
-                                  <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
-                                </svg>
-                              </a>
-                          </div>
-                          <a href="product.html" class="products__img product-card__img">
-                            <img src="../img/item.png" alt="product">
-                            <img src="../img/b1.png" alt="product" class="product-card__hide">
+                    <ul class="products__list list-style">
+                      <li class="products__item product-card">
+                        <div class="products__fav">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
                           </a>
-                          <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
-                          <a href="product.html" class="product-card__brand">Fabio Bruno</a>
-                          <p class="product-card__name">Сумка через плечо</p>
-                          <div class="product-card__prices">
-                            <p class="product-card__price">6 260 руб.</p>
-                          </div>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
                       </li>
                       <li class="products__item  product-card">
-                        <div class="products__sale product-card__flag">
-                            <p>- 30%</p>
-                        </div>
+                        <span class="product-card__flag">-30%</span>
                         <div class="products__fav">
-                            <a href="#" class="add-fav" data-turbolinks="false">
-                                <svg width="24" height="22">
-                                <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="products__basket"><span>Корзина</span>
-                              <svg width="14" height="14">
-                                <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
-                              </svg>
-                            </a>
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
                         </div>
                         <a href="product.html" class="products__img product-card__img">
                           <img src="../img/item.png" alt="product">
@@ -458,35 +388,240 @@
                         <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
                         <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
                         <div class="product-card__prices">
-                            <p class="product-card__old-price">6 260 руб.</p>
-                            <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
+                          <p class="product-card__old-price">6 260 руб.</p>
+                          <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
                         </div>
-                    </li>
-                    <li class="products__item product-card">
-                      <div class="products__fav">
+                      </li>
+                      <li class="products__item product-card">
+                        <div class="products__fav">
                           <a href="#" class="add-fav products__heart" data-turbolinks="false">
-                              <svg width="24" height="22">
+                            <svg width="24" height="22">
                               <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
-                              </svg>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
+                      </li>
+                      <li class="products__item product-card">
+                        <div class="products__fav">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
+                      </li>
+                      <li class="products__item  product-card">
+                        <span class="product-card__flag">-30%</span>
+                        <div class="products__fav">
+                          <a href="#" class="add-fav" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
                           </a>
                           <a href="" class="products__basket"><span>Корзина</span>
                             <svg width="14" height="14">
                               <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
                             </svg>
                           </a>
-                      </div>
-                      <a href="product.html" class="products__img product-card__img">
-                        <img src="../img/item.png" alt="product">
-                        <img src="../img/b1.png" alt="product" class="product-card__hide">
-                      </a>
-                      <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
-                      <a href="product.html" class="product-card__brand">Fabio Bruno</a>
-                      <p class="product-card__name">Сумка через плечо</p>
-                      <div class="product-card__prices">
-                        <p class="product-card__price">6 260 руб.</p>
-                      </div>
-                  </li>
-                      </ul>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="products__brand novetly__brand product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name products__name novetly__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__old-price">6 260 руб.</p>
+                          <p class="products__new-price novetly__price product-card__price">4 500 руб.</p>
+                        </div>
+                      </li>
+                      <li class="products__item product-card">
+                        <div class="products__fav">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
+                      </li>
+                      <li class="products__item product-card">
+                        <div class="products__fav">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
+                      </li>
+                      <li class="products__item product-card">
+                        <div class="products__fav">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
+                      </li>
+                      <li class="products__item product-card">
+                        <div class="products__fav">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
+                      </li>
+                      <li class="products__item product-card">
+                        <div class="products__fav">
+                          <a href="#" class="add-fav products__heart" data-turbolinks="false">
+                            <svg width="24" height="22">
+                              <use xlink:href="img/sprites/sprite.svg#icon__heart"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket products__basket--active"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket"></use>
+                            </svg>
+                          </a>
+                          <a href="" class="products__basket"><span>Корзина</span>
+                            <svg width="14" height="14">
+                              <use xlink:href="img/sprites/sprite.svg#icon__basket-fill"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="product.html" class="products__img product-card__img">
+                          <img src="../img/item.png" alt="product">
+                          <img src="../img/b1.png" alt="product" class="product-card__hide">
+                        </a>
+                        <a class="product-card__fast products__cart-fast get-popup" href="product.html" data-popup="fast">Быстрый просмотр</a>
+                        <a href="product.html" class="product-card__brand">Fabio Bruno</a>
+                        <p class="product-card__name">Сумка через плечо</p>
+                        <div class="product-card__prices">
+                          <p class="product-card__price">6 260 руб.</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <a href="" class="products__move-top button"><span>Вверх</span></a>
               </section>

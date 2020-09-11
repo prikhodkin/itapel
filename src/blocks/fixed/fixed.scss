@@ -1,12 +1,8 @@
 .fixed {
 	position: fixed;
 	z-index: 20;
-	top: 90px;
+	top: 93px;
 }
-
-// .fixed-div {
-//   width: 100%;
-// }
 
 .fixed-opacity {
   opacity: 0;
@@ -16,5 +12,64 @@
 @media (min-width: 1280px) {
   .fixed-div {
     width: auto;
+  }
+
+  .fixed-header {
+    transition: 0s;
+    position: fixed;
+
+    .header__main {
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+
+    .header__link {
+      width: 100px;
+    }
+
+    .user__link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .header__form {
+      position: absolute;
+      left: 0;
+    }
+
+    .header__search-input {
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      bottom: -136px;
+      border-radius: 0;
+      padding-left: calc(50% - 640px);
+      border-top: 1px solid #e0e0e0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+      &--open {
+        opacity: 1;
+        pointer-events: painted;
+        bottom: -105px;
+      }
+    }
+
+    .header__search-button {
+      top: -11px;
+      right: 270px;
+    }
+
+    .header__sections--menu {
+      padding-top: 10px;
+    }
+
+    .submenu {
+      top: 93px;
+    }
+
+    .submenu__wrapper {
+      margin-top: 20px;
+    }
   }
 }

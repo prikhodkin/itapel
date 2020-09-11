@@ -206,6 +206,7 @@
     position: relative;
     width: 340px;
     overflow-y: hidden;
+    max-height: none;
   }
 
   .filters__category .dropdown__list,
@@ -222,6 +223,18 @@
   .filter__fixed-box {
     width: 340px;
     top: 197px;
-    position: sticky;
+    // position: sticky;
+
+    &--fixed {
+      position: sticky;
+      top: 145px;
+      max-height: calc(100vh - 145px);
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 }

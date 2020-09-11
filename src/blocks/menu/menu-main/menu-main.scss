@@ -23,11 +23,10 @@
 }
 
 @media (min-width: 1280px) {
-  .menu-main__item a:hover + .submenu,
-  .menu-main__item a:hover ~ .submenu__overlay,
+  .menu-main__item .menu-main__link:hover + .submenu,
+  .menu-main__item .menu-main__link:hover ~ .submenu__overlay,
   .menu-main__item .submenu:hover,
   .menu-main__item .submenu:hover + .submenu__overlay {
-    font-weight: 500;
     display: block;
     opacity: 1;
   }
@@ -38,11 +37,16 @@
     margin: 0;
   }
 
+  .menu-main__link {
+    padding-right: 31px;
+    margin-left: -1px;
+  }
+
   .menu-main__item {
     min-width: 0;
     padding: 0;
-    margin-right: 30px;
     font-weight: normal;
+    position: unset;
 
     &::after {
       display: none;

@@ -50,7 +50,7 @@
 }
 
 .product-card__fast {
-  display: flex;
+  display: none;
   justify-content: center;
   margin-bottom: 10px;
   font-weight: 500;
@@ -138,6 +138,10 @@
         opacity: 1;
       }
     }
+  }
+
+  .product-card__fast {
+    display: flex;
   }
 
   .product-card__flag {
