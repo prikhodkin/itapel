@@ -27,3 +27,20 @@ export const scrollTop = () => {
   })
 
 }
+
+export const fillBasketSVG =() =>{
+  const wrap = document.querySelectorAll(`.products__fav`);
+
+  wrap.forEach(it => {
+    it.addEventListener(`click`, (e) => {
+      e.preventDefault();
+      if (e.target.closest('.products__basket')) {
+        const imgs = it.querySelectorAll(`.products__basket`);
+
+        imgs.forEach(i => {
+          i.classList.toggle(`products__basket--active`)
+        })
+      }
+    })
+  })
+}

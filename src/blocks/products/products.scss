@@ -105,4 +105,12 @@
       margin-left: auto;
     }
   }
+
+  .products__basket {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
 }
