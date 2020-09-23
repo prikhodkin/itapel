@@ -1,4 +1,5 @@
 import JQ from "jquery";
+import hcSticky from 'hc-sticky';
 
 export const fixedMenu = () => {
 
@@ -69,3 +70,13 @@ export const fixedsearch = () => {
       input.classList.toggle('header__search-input--open');
     })
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if(window.matchMedia("(min-width: 1280px)").matches) {
+      var Sticky = new hcSticky('.filter__fixed-box', {
+        stickTo: 'main',
+        // top: 100
+      });
+    }
+
+  });

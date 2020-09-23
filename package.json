@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "hc-sticky": "^2.2.3",
+    "hc-sticky": "^2.2.6",
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.5.1",
     "slick-carousel": "^1.8.1",

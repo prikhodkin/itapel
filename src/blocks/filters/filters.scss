@@ -226,11 +226,11 @@
     // position: sticky;
 
     &--fixed {
-      position: sticky;
-      top: 145px;
-      max-height: calc(100vh - 145px);
-      overflow-y: scroll;
-      overflow-x: hidden;
+      // position: sticky;
+      padding-top: 150px;
+      // max-height: calc(100vh - 145px);
+      // overflow-y: scroll;
+      // overflow-x: hidden;
     }
 
     &::-webkit-scrollbar {
