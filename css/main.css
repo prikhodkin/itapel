@@ -2246,6 +2246,7 @@ input[type=number] {
     max-width: 1280px;
     margin: 0 auto; }
     .breadcrumbs--fixed {
+      z-index: 40;
       width: 100%;
       padding: 10px; }
     .breadcrumbs--fix {
@@ -2433,12 +2434,7 @@ input[type=number] {
     width: 340px;
     top: 197px; }
     .filter__fixed-box--fixed {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 145px;
-      max-height: calc(100vh - 145px);
-      overflow-y: scroll;
-      overflow-x: hidden; }
+      padding-top: 150px; }
     .filter__fixed-box::-webkit-scrollbar {
       width: 0; } }
 
@@ -2498,14 +2494,14 @@ input[type=number] {
     width: 940px;
     padding: 0;
     margin-top: 0;
-    right: 0;
     left: unset;
     transition: none; }
     .sort__list-wrap--fixed {
       position: fixed;
       padding-right: calc(50% - 640px);
       width: 100%;
-      top: 160px; }
+      top: 160px;
+      right: 0; }
       .sort__list-wrap--fixed .sort__list {
         padding: 20px 0 10px 0; }
       .sort__list-wrap--fixed .sort__title {

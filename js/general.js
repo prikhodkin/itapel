@@ -348,6 +348,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openDesctopSearch", function() { return openDesctopSearch; });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var hc_sticky__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! hc-sticky */ "./node_modules/hc-sticky/dist/hc-sticky.js");
+/* harmony import */ var hc_sticky__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(hc_sticky__WEBPACK_IMPORTED_MODULE_1__);
+
 
 var fixedMenu = function fixedMenu() {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
@@ -409,6 +412,14 @@ var openDesctopSearch = function openDesctopSearch() {
     input.classList.toggle('header__search-input--open');
   });
 };
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.matchMedia("(min-width: 1280px)").matches) {
+    var Sticky = new hc_sticky__WEBPACK_IMPORTED_MODULE_1___default.a('.filter__fixed-box', {
+      stickTo: 'main' // top: 100
+
+    });
+  }
+});
 
 /***/ }),
 
